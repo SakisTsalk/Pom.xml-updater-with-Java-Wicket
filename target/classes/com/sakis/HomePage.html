@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+	<style>
+		.feedbackPanelINFO {
+			color: green;
+		}
+		.feedbackPanelERROR {
+			color: red;
+		}
+	</style>
+	<meta charset="utf-8" />
+	<title>Thesis</title>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<h1>Maven POM.xml updater</h1>
+</head>
+<body>
+
+ <div wicket:id="feedback"></div>
+<form wicket:id="form">
+	<p>
+		<label>Select file :</label>
+		<input wicket:id="fileUpload" size="40" type="file" accept=".xml"/>
+		<input type="submit" value="Upload"/>
+	</p>
+</form>
+
+</body>
+</html>
