@@ -11,7 +11,7 @@ import org.apache.wicket.util.file.File;
 import org.apache.wicket.util.lang.Bytes;
 
 
-public class HomePage extends WebPage {
+public class HomePage extends BasePage {
 
     private FileUploadField fileUpload;
     private String UPLOAD_FOLDER = "C:\\Users\\sakis\\Desktop\\THESIS\\";
@@ -36,6 +36,8 @@ public class HomePage extends WebPage {
 
 
 
+
+
                          File newFile = new File(UPLOAD_FOLDER
                                  + uploadedFile.getClientFileName());
 
@@ -51,9 +53,13 @@ public class HomePage extends WebPage {
                          } catch (Exception e) {
                              throw new IllegalStateException("Error");
                          }
+
+
+
+                         setResponsePage(ResultsPage.class, parameters);
                      } else {
                         flag = false;
-                         fileUpload.error("ERROR file must be in .xml form");
+                         info("file must be at .xml form");
 
                      }
 

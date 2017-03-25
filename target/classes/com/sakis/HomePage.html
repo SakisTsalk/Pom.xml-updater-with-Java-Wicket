@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html xmlns:wicket="http://wicket.apache.org">
 <head>
-	<style>
-		.feedbackPanelINFO {
-			color: green;
-		}
-		.feedbackPanelERROR {
-			color: red;
-		}
-	</style>
-	<meta charset="utf-8" />
-	<title>Thesis</title>
-	<link rel="stylesheet" href="style.css" type="text/css"/>
-	<h1>Maven POM.xml updater</h1>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+	input[type=file] {
+		margin: 0 auto;
+	}
+</style>
 </head>
 <body>
+
+<wicket:extend>
 
  <div wicket:id="feedback"></div>
 <form wicket:id="form">
 	<p>
 		<label>Select file :</label>
+		<span class="btn btn-default btn-file">
 		<input wicket:id="fileUpload" size="40" type="file" accept=".xml"/>
-		<input type="submit" value="Upload"/>
+			</span>
+		<input type="submit" class="btn btn-info" value="Upload"/>
 	</p>
 </form>
+
+</wicket:extend>
 
 </body>
 </html>
