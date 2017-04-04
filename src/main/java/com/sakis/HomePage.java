@@ -1,7 +1,6 @@
 package com.sakis;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.upload.FileUpload;
 import org.apache.wicket.markup.html.form.upload.FileUploadField;
@@ -54,9 +53,12 @@ public class HomePage extends BasePage {
                              throw new IllegalStateException("Error");
                          }
 
+                         PageParameters pageParameters = new PageParameters();
 
+                         pageParameters.add("filename", UPLOAD_FOLDER
+                                 + uploadedFile.getClientFileName());
 
-                         setResponsePage(ResultsPage.class, parameters);
+                         setResponsePage(ResultsPage.class, pageParameters);
                      } else {
                         flag = false;
                          info("file must be at .xml form");

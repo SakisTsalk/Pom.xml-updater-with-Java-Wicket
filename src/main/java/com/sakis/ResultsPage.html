@@ -11,7 +11,28 @@
 <body>
 <wicket:extend>
     <form wicket:id="form">
-        <span wicket:id="resultlabel"></span>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Group ID</th>
+                <th>Artifact ID</th>
+                <th>Version</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr wicket:id="listView">
+
+                <td><span wicket:id="groupid"></span></td>
+
+                <td><span wicket:id="artifactid"></span></td>
+
+                <td><span wicket:id="version"></span></td>
+
+
+            </tr>
+            </tbody>
+        </table>
     </form>
 </wicket:extend>
 </body>
