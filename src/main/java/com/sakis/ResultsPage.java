@@ -1,6 +1,7 @@
 package com.sakis;
 
 import com.sakis.pomdepenencies.Dependencies;
+import org.apache.commons.io.FileUtils;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.list.ListItem;
@@ -8,10 +9,15 @@ import org.apache.wicket.markup.html.list.ListView;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.util.file.File;
 import org.apache.wicket.util.string.StringValue;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.w3c.dom.*;
+import org.xml.sax.EntityResolver;
+import org.xml.sax.ErrorHandler;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -20,8 +26,9 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import java.io.StringWriter;
-import java.io.Writer;
+import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 
 /**
@@ -45,6 +52,8 @@ public class ResultsPage extends BasePage {
         String output = "empty";
 
         String groupidString;
+
+        String latestVersion;
 
         String artifactidString;
 
@@ -85,6 +94,8 @@ public class ResultsPage extends BasePage {
 
 
 
+
+
         try {
 
             File fXmlFile = new File(filename);
@@ -95,6 +106,10 @@ public class ResultsPage extends BasePage {
             doc.getDocumentElement().normalize();
 
             NodeList nList = doc.getElementsByTagName("dependency");
+
+
+
+
 
             for (int temp = 0; temp < nList.getLength(); temp++) {
 
@@ -140,8 +155,6 @@ public class ResultsPage extends BasePage {
                 item.add(new Label("version", dep.getVersion()));
 
 
-
-
             }
         };
 
@@ -149,9 +162,49 @@ public class ResultsPage extends BasePage {
        // MultiLineLabel resultlabel = new MultiLineLabel("resultlabel",output);
 
 
-        System.out.println(output);
+        URL url = null;
+        try {
+            url = new URL("http://search.maven.org/solrsearch/select?q=a:%22jetty-all%22&rows=20&wt=json");
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
 
-        form.add(listView);
+        File responsefile = new File(UPLOAD_FOLDER+"response.json");
+
+        try {
+            FileUtils.copyURLToFile(url, responsefile);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        JSONParser parser = new JSONParser();
+
+        try {
+
+                Object obj = parser.parse(new FileReader(UPLOAD_FOLDER+"response.json"));
+
+            JSONObject jsonObject = (JSONObject) obj;
+
+           // JSONArray results = (JSONArray) jsonObject.get("response");
+
+            JSONObject resultObject = (JSONObject) jsonObject.get("response");
+
+            JSONArray docs = (JSONArray) resultObject.get("docs");
+
+            JSONObject docsObject = (JSONObject) docs.get(0);
+
+
+            latestVersion = (String) docsObject.get("latestVersion").toString();
+
+            System.out.println("latest version: " +latestVersion);
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+
+            form.add(listView);
 
         add(form);
 

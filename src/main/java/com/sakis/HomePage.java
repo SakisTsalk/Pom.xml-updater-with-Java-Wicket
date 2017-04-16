@@ -72,7 +72,7 @@ public class HomePage extends BasePage {
 
         form.setMultiPart(true);
 
-        form.setMaxSize(Bytes.kilobytes(10));
+        form.setMaxSize(Bytes.kilobytes(30));
 
         if (flag == false){
 
