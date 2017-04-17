@@ -8,11 +8,22 @@ public class Dependencies {
     String groupid;
     String artifactid;
     String version;
+    String newversion;
 
-    public Dependencies(String groupid, String artifactid, String version) {
+    public String getNewversion() {
+        return newversion;
+    }
+
+    public void setNewversion(String newversion) {
+        this.newversion = newversion;
+    }
+
+    public Dependencies(String groupid, String artifactid, String version, String newversion) {
         this.groupid = groupid;
         this.artifactid = artifactid;
         this.version = version;
+        this.newversion = newversion;
+
     }
 
     public String getGroupid() {

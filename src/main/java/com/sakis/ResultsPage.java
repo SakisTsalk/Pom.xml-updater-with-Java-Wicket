@@ -1,6 +1,7 @@
 package com.sakis;
 
 import com.sakis.pomdepenencies.Dependencies;
+import com.sakis.pomdepenencies.Properties;
 import org.apache.commons.io.FileUtils;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Form;
@@ -12,21 +13,14 @@ import org.apache.wicket.util.string.StringValue;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-import org.w3c.dom.*;
-import org.xml.sax.EntityResolver;
-import org.xml.sax.ErrorHandler;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-import java.io.*;
+import java.io.FileReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -46,6 +40,8 @@ public class ResultsPage extends BasePage {
 
         ArrayList<Dependencies> dependencylist = new ArrayList<Dependencies>();
 
+        ArrayList<Properties> propertieslist = new ArrayList<Properties>();
+
 
         Document doc;
 
@@ -53,11 +49,17 @@ public class ResultsPage extends BasePage {
 
         String groupidString;
 
-        String latestVersion;
+        String latestVersion = new String();
 
         String artifactidString;
 
         String versionString;
+
+        String propName;
+
+        String propVersion;
+
+        String newVersion;
 
 
         Form<?> form = new Form<Void>("form");
@@ -92,10 +94,6 @@ public class ResultsPage extends BasePage {
 
 
 
-
-
-
-
         try {
 
             File fXmlFile = new File(filename);
@@ -108,8 +106,36 @@ public class ResultsPage extends BasePage {
             NodeList nList = doc.getElementsByTagName("dependency");
 
 
+            NodeList pList = doc.getElementsByTagName("properties");
+
+           if (pList.getLength()!= 0) {
 
 
+               Node pNode = pList.item(0);
+
+
+               if (pNode.getNodeType() == Node.ELEMENT_NODE) {
+                   Element eElement = (Element) pNode;
+
+                   NodeList n1 = eElement.getElementsByTagName("*");
+
+
+                   for (int i = 0; i < n1.getLength(); i++) {
+                       Node eNode = n1.item(i);
+
+                       Element elElement = (Element) eNode;
+
+                       propName = eNode.getNodeName();
+                       propVersion = eNode.getTextContent();
+
+
+                       Properties properties = new Properties(propName, propVersion);
+
+                       propertieslist.add(properties);
+
+                   }
+               }
+           }
 
             for (int temp = 0; temp < nList.getLength(); temp++) {
 
@@ -126,13 +152,65 @@ public class ResultsPage extends BasePage {
                     artifactidString = eElement.getElementsByTagName("artifactId").item(0).getTextContent();
                     versionString = eElement.getElementsByTagName("version").item(0).getTextContent();
 
-                    Dependencies dependency = new Dependencies(groupidString,artifactidString,versionString);
+                    if (versionString.startsWith("${")) {
+                        newVersion = versionString.replaceAll("[${}]", "");
 
-                    dependencylist.add(dependency);
+                        for (int i = 0; i < propertieslist.size(); i++) {
 
-//                    System.out.println("Group ID : " + eElement.getElementsByTagName("groupId").item(0).getTextContent());
-//                    System.out.println("Artifact ID : " + eElement.getElementsByTagName("artifactId").item(0).getTextContent());
-//                    System.out.println("Version : " + eElement.getElementsByTagName("version").item(0).getTextContent());
+                            if (newVersion.equals(propertieslist.get(i).getName())) {
+                                versionString = propertieslist.get(i).getVersion();
+                            }
+                        }
+                    }
+
+                    URL url = null;
+                    try {
+                       url = new URL( "http://search.maven.org/solrsearch/select?q=g:%22"+groupidString+"%22%20AND%20a:%22"+artifactidString+"%22&rows=20&wt=json");
+                       // url = new URL("http://search.maven.org/solrsearch/select?q=a:%22"+artifactidString+"%22&rows=20&wt=json");
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    }
+
+                    File responsefile = new File(UPLOAD_FOLDER+"response.json");
+
+                    try {
+                        FileUtils.copyURLToFile(url, responsefile);
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                    JSONParser parser = new JSONParser();
+
+                    try {
+
+                        Object obj = parser.parse(new FileReader(UPLOAD_FOLDER+"response.json"));
+
+                        JSONObject jsonObject = (JSONObject) obj;
+
+                        // JSONArray results = (JSONArray) jsonObject.get("response");
+
+                        JSONObject resultObject = (JSONObject) jsonObject.get("response");
+
+                        JSONArray docs = (JSONArray) resultObject.get("docs");
+
+                        JSONObject docsObject = (JSONObject) docs.get(0);
+
+
+
+
+                        latestVersion = (String) docsObject.get("latestVersion").toString();
+
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+
+                        Dependencies dependency = new Dependencies(groupidString, artifactidString, versionString, latestVersion);
+
+                        dependencylist.add(dependency);
+
 
 
                 }
@@ -154,72 +232,23 @@ public class ResultsPage extends BasePage {
 
                 item.add(new Label("version", dep.getVersion()));
 
+                item.add(new Label("newversion", dep.getNewversion()));
+
 
             }
         };
 
 
-       // MultiLineLabel resultlabel = new MultiLineLabel("resultlabel",output);
+        form.add(listView);
 
 
-        URL url = null;
-        try {
-            url = new URL("http://search.maven.org/solrsearch/select?q=a:%22jetty-all%22&rows=20&wt=json");
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
-
-        File responsefile = new File(UPLOAD_FOLDER+"response.json");
-
-        try {
-            FileUtils.copyURLToFile(url, responsefile);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        JSONParser parser = new JSONParser();
-
-        try {
-
-                Object obj = parser.parse(new FileReader(UPLOAD_FOLDER+"response.json"));
-
-            JSONObject jsonObject = (JSONObject) obj;
-
-           // JSONArray results = (JSONArray) jsonObject.get("response");
-
-            JSONObject resultObject = (JSONObject) jsonObject.get("response");
-
-            JSONArray docs = (JSONArray) resultObject.get("docs");
-
-            JSONObject docsObject = (JSONObject) docs.get(0);
 
 
-            latestVersion = (String) docsObject.get("latestVersion").toString();
-
-            System.out.println("latest version: " +latestVersion);
-
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
 
 
-            form.add(listView);
 
         add(form);
 
     }
 
-    public static  String prettyPrint(Document xml) throws Exception {
-
-        Transformer tf = TransformerFactory.newInstance().newTransformer();
-        tf.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-        tf.setOutputProperty(OutputKeys.INDENT, "yes");
-        Writer out = new StringWriter();
-        tf.transform(new DOMSource(xml), new StreamResult(out));
-
-        return out.toString();
-    }
-
-
-    }
+}
