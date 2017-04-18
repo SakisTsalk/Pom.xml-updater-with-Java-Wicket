@@ -45,15 +45,13 @@ public class ResultsPage extends BasePage {
 
         Document doc;
 
-        String output = "empty";
-
         String groupidString;
 
         String latestVersion = new String();
 
         String artifactidString;
 
-        String versionString;
+        String versionString = new String();
 
         String propName;
 
@@ -148,9 +146,16 @@ public class ResultsPage extends BasePage {
 
                     Element eElement = (Element) nNode;
 
+
+
+
                     groupidString =   eElement.getElementsByTagName("groupId").item(0).getTextContent();
                     artifactidString = eElement.getElementsByTagName("artifactId").item(0).getTextContent();
-                    versionString = eElement.getElementsByTagName("version").item(0).getTextContent();
+
+                    NodeList n1 = eElement.getElementsByTagName("version");
+                    if (n1.getLength() > 0) {
+                        versionString = n1.item(0).getTextContent();
+                    }
 
                     if (versionString.startsWith("${")) {
                         newVersion = versionString.replaceAll("[${}]", "");
@@ -166,7 +171,6 @@ public class ResultsPage extends BasePage {
                     URL url = null;
                     try {
                        url = new URL( "http://search.maven.org/solrsearch/select?q=g:%22"+groupidString+"%22%20AND%20a:%22"+artifactidString+"%22&rows=20&wt=json");
-                       // url = new URL("http://search.maven.org/solrsearch/select?q=a:%22"+artifactidString+"%22&rows=20&wt=json");
                     } catch (MalformedURLException e) {
                         e.printStackTrace();
                     }
@@ -240,12 +244,6 @@ public class ResultsPage extends BasePage {
 
 
         form.add(listView);
-
-
-
-
-
-
 
         add(form);
 
