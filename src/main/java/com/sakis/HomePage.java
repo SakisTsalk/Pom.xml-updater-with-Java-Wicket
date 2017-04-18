@@ -30,8 +30,9 @@ public class HomePage extends BasePage {
                  if (uploadedFile != null) {
 
                      String extension = FilenameUtils.getExtension(uploadedFile.getClientFileName());
+                     String name = uploadedFile.getClientFileName();
 
-                     if (extension.equals("xml")) {
+                     if (name.equals("pom.xml") && (extension.equals("xml"))) {
 
 
 
@@ -61,7 +62,7 @@ public class HomePage extends BasePage {
                          setResponsePage(ResultsPage.class, pageParameters);
                      } else {
                         flag = false;
-                         info("file must be at .xml form");
+                         info("Only pom.xml files are accepted");
 
                      }
 
@@ -72,7 +73,7 @@ public class HomePage extends BasePage {
 
         form.setMultiPart(true);
 
-        form.setMaxSize(Bytes.kilobytes(30));
+        //form.setMaxSize(Bytes.kilobytes(30));
 
         if (flag == false){
 

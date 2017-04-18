@@ -3,6 +3,8 @@ package com.sakis;
 import com.sakis.pomdepenencies.Dependencies;
 import com.sakis.pomdepenencies.Properties;
 import org.apache.commons.io.FileUtils;
+import org.apache.wicket.AttributeModifier;
+import org.apache.wicket.behavior.AttributeAppender;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.list.ListItem;
@@ -63,27 +65,7 @@ public class ResultsPage extends BasePage {
         Form<?> form = new Form<Void>("form");
 
 
-//        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-//        dbf.setValidating(false);
-//        DocumentBuilder db = null;
-//        try {
-//            db = dbf.newDocumentBuilder();
-//        } catch (ParserConfigurationException e) {
-//            e.printStackTrace();
-//        }
-//
-//        try {
-//             doc = db.parse(new FileInputStream(new File(UPLOAD_FOLDER +"test.xml")));
-//            try {
-//                 output = prettyPrint(doc);
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//        } catch (SAXException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+
 
         StringValue filen = parameters.get("filename");
 
@@ -145,8 +127,6 @@ public class ResultsPage extends BasePage {
 
 
                     Element eElement = (Element) nNode;
-
-
 
 
                     groupidString =   eElement.getElementsByTagName("groupId").item(0).getTextContent();
@@ -228,13 +208,19 @@ public class ResultsPage extends BasePage {
 
         ListView listView = new ListView("listView", dependencylist){
             protected void populateItem(ListItem item) {
+
                 Dependencies dep = (Dependencies) item.getModelObject();
+                Label versionlabel =  new Label("version", dep.getVersion());
 
                 item.add(new Label("groupid", dep.getGroupid()));
 
                 item.add(new Label("artifactid", dep.getArtifactid()));
+                if (dep.getVersion().equals(dep.getNewversion())){
+                    versionlabel.add(new AttributeAppender("style", "color:black;"));}
+                    else{
+                    versionlabel.add(new AttributeAppender("style", "color:red;"));}
 
-                item.add(new Label("version", dep.getVersion()));
+                item.add(versionlabel);
 
                 item.add(new Label("newversion", dep.getNewversion()));
 

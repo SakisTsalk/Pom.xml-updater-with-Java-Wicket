@@ -2,6 +2,7 @@
 <html xmlns:wicket="http://wicket.apache.org">
 
 
+
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -11,18 +12,19 @@
 <body>
 <wicket:extend>
     <form wicket:id="form">
-        <table class="table">
+      <div style=" height: 350px; overflow: scroll;">
+                <table class="table">
             <thead>
             <tr>
                 <th>Group ID</th>
                 <th>Artifact ID</th>
                 <th>Version</th>
-                <th>Newest Version</th>
+                <th>Newest Version (Online)</th>
             </tr>
             </thead>
 
-            <tbody>
-            <tr wicket:id="listView">
+            <tbody  >
+            <tr wicket:id="listView" >
 
                 <td><span wicket:id="groupid"></span></td>
 
@@ -36,6 +38,7 @@
             </tr>
             </tbody>
         </table>
+        </div>
     </form>
 </wicket:extend>
 </body>
