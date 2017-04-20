@@ -3,10 +3,10 @@ package com.sakis;
 import com.sakis.pomdepenencies.Dependencies;
 import com.sakis.pomdepenencies.Properties;
 import org.apache.commons.io.FileUtils;
-import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.behavior.AttributeAppender;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Form;
+import org.apache.wicket.markup.html.link.DownloadLink;
 import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.ListView;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
@@ -22,6 +22,10 @@ import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import java.io.FileReader;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -72,11 +76,11 @@ public class ResultsPage extends BasePage {
       String  filename = filen.toString();
 
 
-
+        File fXmlFile = new File(filename);
 
         try {
 
-            File fXmlFile = new File(filename);
+
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             doc = dBuilder.parse(fXmlFile);
@@ -131,6 +135,14 @@ public class ResultsPage extends BasePage {
 
                     groupidString =   eElement.getElementsByTagName("groupId").item(0).getTextContent();
                     artifactidString = eElement.getElementsByTagName("artifactId").item(0).getTextContent();
+
+                   // eElement.getElementsByTagName("artifactId").item(0).setTextContent("petros");
+
+                    TransformerFactory transformerFactory = TransformerFactory.newInstance();
+                    Transformer transformer = transformerFactory.newTransformer();
+                    DOMSource source = new DOMSource(doc);
+                    StreamResult result = new StreamResult(new File(filename));
+                    transformer.transform(source, result);
 
                     NodeList n1 = eElement.getElementsByTagName("version");
                     if (n1.getLength() > 0) {
@@ -227,6 +239,12 @@ public class ResultsPage extends BasePage {
 
             }
         };
+
+
+
+        DownloadLink downloadlink = new DownloadLink("link1", fXmlFile, fXmlFile.getName());
+        form.add(downloadlink);
+        form.add(downloadlink);
 
 
         form.add(listView);

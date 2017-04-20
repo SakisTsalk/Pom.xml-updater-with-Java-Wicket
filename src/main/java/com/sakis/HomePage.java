@@ -7,10 +7,9 @@ import org.apache.wicket.markup.html.form.upload.FileUploadField;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.util.file.File;
-import org.apache.wicket.util.lang.Bytes;
 
 
-public class HomePage extends BasePage {
+public class HomePage extends BasePage  {
 
     private FileUploadField fileUpload;
     private String UPLOAD_FOLDER = "C:\\Users\\sakis\\Desktop\\THESIS\\";
@@ -69,6 +68,8 @@ public class HomePage extends BasePage {
                  }
 
              };
+
+
          };
 
         form.setMultiPart(true);
