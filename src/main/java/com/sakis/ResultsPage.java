@@ -242,6 +242,48 @@ public class ResultsPage extends BasePage {
 
 
 
+        try {
+
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            doc = dBuilder.parse(fXmlFile);
+
+            doc.getDocumentElement().normalize();
+
+            NodeList nList = doc.getElementsByTagName("dependency");
+            System.out.println("length 1"+nList.getLength()+"length 2"+dependencylist.size());
+
+            for (int temp = 0; temp < nList.getLength(); temp++) {
+
+                Node nNode = nList.item(temp);
+
+
+                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+
+                    Element eElement = (Element) nNode;
+
+                    Dependencies dep = dependencylist.get(temp);
+
+                    System.out.println(dep.getNewversion());
+
+                    eElement.getElementsByTagName("version").item(0).setTextContent(dep.getNewversion());
+
+                    TransformerFactory transformerFactory = TransformerFactory.newInstance();
+                    Transformer transformer = transformerFactory.newTransformer();
+                    DOMSource source = new DOMSource(doc);
+                    StreamResult result = new StreamResult(new File(filename));
+                    transformer.transform(source, result);
+
+
+
+                }
+                }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
         DownloadLink downloadlink = new DownloadLink("link1", fXmlFile, fXmlFile.getName());
         form.add(downloadlink);
         form.add(downloadlink);
