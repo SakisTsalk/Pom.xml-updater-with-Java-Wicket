@@ -3,8 +3,6 @@ package com.sakis;
 import com.sakis.pomManager.PomxmlManager;
 import com.sakis.pomManager.PomxmxManagerImpl;
 import com.sakis.pomManager.pomdepenencies.Dependencies;
-import com.sakis.pomxml.Pomxml;
-import com.sakis.pomxml.PomxmlImpl;
 import org.apache.wicket.behavior.AttributeAppender;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.Form;
@@ -31,24 +29,15 @@ public class ResultsPage extends BasePage {
 
         ArrayList<Dependencies> dependencylist = new ArrayList<Dependencies>();
 
-
-
         Form<?> form = new Form<Void>("form");
-
-
-
 
         StringValue filen = parameters.get("filename");
 
-      String  filename = filen.toString();
-
+        String  filename = filen.toString();
 
         File fXmlFile = new File(filename);
-
         File responsefile = new File(UPLOAD_FOLDER+"response.json");
-
         PomxmlManager pomxml = new PomxmxManagerImpl();
-
         pomxml.GetPomResults(fXmlFile,dependencylist,responsefile);
 
 

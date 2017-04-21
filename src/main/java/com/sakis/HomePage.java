@@ -9,7 +9,7 @@ import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.util.file.File;
 
 
-public class HomePage extends BasePage  {
+public class HomePage extends BasePage {
 
     private FileUploadField fileUpload;
     private String UPLOAD_FOLDER = "C:\\Users\\sakis\\Desktop\\THESIS\\";
@@ -90,6 +90,8 @@ public class HomePage extends BasePage  {
 
 
         add(form);
+
+
 
     }
 

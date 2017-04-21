@@ -12,10 +12,10 @@
 <body>
 <wicket:extend>
     <form wicket:id="form">
-      <div style=" height: 350px; overflow: scroll;">
-                <table class="table">
+      <div style=" height: 350px; overflow: scroll;" class="container">
+                <table class="table table-bordered">
             <thead>
-            <tr>
+            <tr >
                 <th>Group ID</th>
                 <th>Artifact ID</th>
                 <th>Version</th>
@@ -24,7 +24,7 @@
             </thead>
 
             <tbody  >
-            <tr wicket:id="listView" >
+            <tr wicket:id="listView"  align="left">
 
                 <td><span wicket:id="groupid"></span></td>
 
@@ -39,8 +39,9 @@
             </tbody>
         </table>
         </div>
-
-       <a class="btn btn-primary" href="#" role="button" wicket:id="link1">Download the updated pom.xml</a>
+        <p class="small">*Please note that some of the newest versions may not be valid yet. </p>
+        <button type="button" class="btn btn-primary" wicket:id="link1">Download the updated pom.xml</button>
+        <!--<a class="btn" href="#" role="button" wicket:id="link1">Download the updated pom.xml</a>-->
     </form>
 </wicket:extend>
 </body>

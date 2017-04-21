@@ -58,7 +58,6 @@ public class PomxmxManagerImpl implements PomxmlManager {
 
             if (pList.getLength()!= 0) {
 
-
                 Node pNode = pList.item(0);
 
 
@@ -67,11 +66,8 @@ public class PomxmxManagerImpl implements PomxmlManager {
 
                     NodeList n1 = eElement.getElementsByTagName("*");
 
-
                     for (int i = 0; i < n1.getLength(); i++) {
                         Node eNode = n1.item(i);
-
-                        Element elElement = (Element) eNode;
 
                         propName = eNode.getNodeName();
                         propVersion = eNode.getTextContent();
@@ -191,7 +187,7 @@ public class PomxmxManagerImpl implements PomxmlManager {
             doc.getDocumentElement().normalize();
 
             NodeList nList = doc.getElementsByTagName("dependency");
-            System.out.println("length 1"+nList.getLength()+"length 2"+dependencylist.size());
+
 
             for (int temp = 0; temp < nList.getLength(); temp++) {
 
@@ -204,7 +200,6 @@ public class PomxmxManagerImpl implements PomxmlManager {
 
                     Dependencies dep = dependencylist.get(temp);
 
-                    System.out.println(dep.getNewversion());
 
                     eElement.getElementsByTagName("version").item(0).setTextContent(dep.getNewversion());
 
