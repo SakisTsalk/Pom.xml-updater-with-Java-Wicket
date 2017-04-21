@@ -1,6 +1,8 @@
 package com.sakis;
 
-import com.sakis.pomdepenencies.Dependencies;
+import com.sakis.pomManager.PomxmlManager;
+import com.sakis.pomManager.PomxmxManagerImpl;
+import com.sakis.pomManager.pomdepenencies.Dependencies;
 import com.sakis.pomxml.Pomxml;
 import com.sakis.pomxml.PomxmlImpl;
 import org.apache.wicket.behavior.AttributeAppender;
@@ -45,7 +47,7 @@ public class ResultsPage extends BasePage {
 
         File responsefile = new File(UPLOAD_FOLDER+"response.json");
 
-        Pomxml pomxml = new PomxmlImpl();
+        PomxmlManager pomxml = new PomxmxManagerImpl();
 
         pomxml.GetPomResults(fXmlFile,dependencylist,responsefile);
 

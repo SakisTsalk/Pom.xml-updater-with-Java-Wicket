@@ -1,7 +1,7 @@
-package com.sakis.pomxml;
+package com.sakis.pomManager;
 
-import com.sakis.pomdepenencies.Dependencies;
-import com.sakis.pomdepenencies.Properties;
+import com.sakis.pomManager.pomdepenencies.Dependencies;
+import com.sakis.pomManager.pomdepenencies.Properties;
 import org.apache.commons.io.FileUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -24,11 +24,12 @@ import java.net.URL;
 import java.util.ArrayList;
 
 /**
- * Created by sakis on 4/20/2017.
+ * Created by sakis on 4/21/2017.
  */
-public class PomxmlImpl implements Pomxml {
+public class PomxmxManagerImpl implements PomxmlManager {
+
     @Override
-    public void GetPomResults(File fXmlFile, ArrayList<Dependencies> dependencylist,File responsefile) {
+    public void GetPomResults(File fXmlFile, ArrayList<Dependencies> dependencylist, File responsefile) {
         ArrayList<Properties> propertieslist = new ArrayList<Properties>();
 
         Document doc;

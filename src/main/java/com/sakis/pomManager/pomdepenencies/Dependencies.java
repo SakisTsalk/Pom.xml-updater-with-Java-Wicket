@@ -1,4 +1,4 @@
-package com.sakis.pomdepenencies;
+package com.sakis.pomManager.pomdepenencies;
 
 /**
  * Created by sakis on 4/4/2017.
