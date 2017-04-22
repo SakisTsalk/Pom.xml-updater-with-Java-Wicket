@@ -63,6 +63,14 @@
 			<version>1.5.7</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.vaadin/vaadin-server -->
+		<dependency>
+			<groupId>com.vaadin</groupId>
+			<artifactId>vaadin-server</artifactId>
+			<version>8.0.2</version>
+		</dependency>
+
+
 
 		<!-- LOGGING DEPENDENCIES - LOG4J -->
 		<dependency>

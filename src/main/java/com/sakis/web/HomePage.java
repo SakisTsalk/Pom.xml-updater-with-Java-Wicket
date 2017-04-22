@@ -1,12 +1,10 @@
-package com.sakis;
+package com.sakis.web;
 
+import com.vaadin.server.VaadinService;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.wicket.Component;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.IAjaxIndicatorAware;
 import org.apache.wicket.ajax.markup.html.form.AjaxButton;
-import org.apache.wicket.behavior.AttributeAppender;
-import org.apache.wicket.extensions.ajax.markup.html.AjaxLazyLoadPanel;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.upload.FileUpload;
 import org.apache.wicket.markup.html.form.upload.FileUploadField;
@@ -19,65 +17,17 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
 
     private FileUploadField fileUpload;
     private String UPLOAD_FOLDER = "C:\\Users\\sakis\\Desktop\\THESIS\\";
-    private boolean flag;
+
+
 
 
 	public HomePage(final PageParameters parameters) {
+
 
         fileUpload = new FileUploadField("fileUpload");
 
         add(new FeedbackPanel("feedback"));
          Form<?> form = new Form<Void>("form");
-//        {
-//             @Override
-//             protected void onSubmit() {
-//
-//                 final FileUpload uploadedFile = fileUpload.getFileUpload();
-//                 if (uploadedFile != null) {
-//
-//                     String extension = FilenameUtils.getExtension(uploadedFile.getClientFileName());
-//                     String name = uploadedFile.getClientFileName();
-//
-//                     if (name.equals("pom.xml") && (extension.equals("xml"))) {
-//
-//
-//
-//
-//
-//                         File newFile = new File(UPLOAD_FOLDER
-//                                 + uploadedFile.getClientFileName());
-//
-//                         if (newFile.exists()) {
-//                             newFile.delete();
-//                         }
-//
-//                         try {
-//                             newFile.createNewFile();
-//                             uploadedFile.writeTo(newFile);
-//
-//                             info("saved file: " + uploadedFile.getClientFileName());
-//                         } catch (Exception e) {
-//                             throw new IllegalStateException("Error");
-//                         }
-//
-//                         PageParameters pageParameters = new PageParameters();
-//
-//                         pageParameters.add("filename", UPLOAD_FOLDER
-//                                 + uploadedFile.getClientFileName());
-//
-//                         setResponsePage(ResultsPage.class, pageParameters);
-//                     } else {
-//                        flag = false;
-//                         info("Only pom.xml files are accepted");
-//
-//                     }
-//
-//                 }
-//
-//             };
-//
-//
-//         };
 
 
         AjaxButton ab = new AjaxButton("submit") {
@@ -120,20 +70,14 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
                          pageParameters.add("filename", UPLOAD_FOLDER
                                  + uploadedFile.getClientFileName());
 
+                         pageParameters.add("uploadfolder", UPLOAD_FOLDER);
+
                          setResponsePage(ResultsPage.class, pageParameters);
-                     } else {
-                        flag = false;
+                     } else
                          info("Only pom.xml files are accepted");
-
-                     }
-
                  }
-
-
+             }
             }
-
-            }
-
         };
 
 

@@ -1,4 +1,4 @@
-package com.sakis;
+package com.sakis.web;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.link.Link;

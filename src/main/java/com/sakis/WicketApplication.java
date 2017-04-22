@@ -1,5 +1,6 @@
 package com.sakis;
 
+import com.sakis.web.HomePage;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
 
@@ -26,6 +27,8 @@ public class WicketApplication extends WebApplication
 	@Override
 	public void init()
 	{
+
+		getDebugSettings().setAjaxDebugModeEnabled(false);
 		super.init();
 
 		// add your configuration here

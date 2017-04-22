@@ -1,5 +1,6 @@
 package com.sakis;
 
+import com.sakis.web.HomePage;
 import org.apache.wicket.util.tester.WicketTester;
 import org.junit.Before;
 import org.junit.Test;

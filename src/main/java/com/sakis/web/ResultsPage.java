@@ -1,4 +1,4 @@
-package com.sakis;
+package com.sakis.web;
 
 import com.sakis.pomManager.PomxmlManager;
 import com.sakis.pomManager.PomxmxManagerImpl;
@@ -33,10 +33,14 @@ public class ResultsPage extends BasePage {
 
         StringValue filen = parameters.get("filename");
 
+        StringValue uploadn = parameters.get("uploadfolder");
+
         String  filename = filen.toString();
 
+        String  uploadfolder = uploadn.toString();
+
         File fXmlFile = new File(filename);
-        File responsefile = new File(UPLOAD_FOLDER+"response.json");
+        File responsefile = new File(uploadfolder+"response.json");
         PomxmlManager pomxml = new PomxmxManagerImpl();
         pomxml.GetPomResults(fXmlFile,dependencylist,responsefile);
 

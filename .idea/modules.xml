@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/thesis1.iml" filepath="$PROJECT_DIR$/thesis1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pom_Dependency_Updater.iml" filepath="$PROJECT_DIR$/Pom_Dependency_Updater.iml" />
     </modules>
   </component>
 </project>
