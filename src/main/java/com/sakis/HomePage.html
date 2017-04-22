@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html xmlns:wicket="http://wicket.apache.org">
+<html xmlns:wicket="http://wicket.apache.org" xmlns="http://www.w3.org/1999/html">
 <head>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+
 
 
 <style>
 	input[type=file] {
 		margin: 0 auto;
 	}
+
 
 
 </style>
@@ -26,15 +29,23 @@
 		<span class="btn btn-default btn-file">
 		<input wicket:id="fileUpload" size="40" type="file" accept=".xml"/>
 			</span>
-		<input type="submit" class="btn btn-primary" value="Upload"/>
+		<input   wicket:id="submit" type="button" class="btn btn-primary" value="Upload"/>
+
+	<span id="loadingIndicator_id" style="display:none;"  class="small">
+		<img src="images/ajax-loader.gif"/> Please wait...
+	</span>
 
 	</p>
+
+
 
 	<p>
 		Upload the pom.xml file of your project and see which of your dependencies are outdated.
 
 
 	</p>
+
+	<div class="modal"><!-- Place at bottom of page --></div>
 </form>
 
 </wicket:extend>

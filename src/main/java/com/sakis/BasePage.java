@@ -20,6 +20,14 @@ public class    BasePage extends WebPage  {
         };
         add(homePageLink);
 
+        Link homePageLink2 = new Link("homePage2") {
+            @Override
+            public void onClick() {
+                setResponsePage(HomePage.class);
+            }
+        };
+        add(homePageLink2);
+
 
     }
 }
