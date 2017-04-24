@@ -12,16 +12,20 @@ import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.util.file.File;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 
 public class HomePage extends BasePage implements IAjaxIndicatorAware {
 
     private FileUploadField fileUpload;
-    private String UPLOAD_FOLDER = "C:\\Users\\sakis\\Desktop\\THESIS\\";
-
-
+    private String UPLOAD_FOLDER = Paths.get(".").toAbsolutePath().toString();;
 
 
 	public HomePage(final PageParameters parameters) {
+
+
+        System.out.println("Uploading Folder:" +UPLOAD_FOLDER);
 
 
         fileUpload = new FileUploadField("fileUpload");
