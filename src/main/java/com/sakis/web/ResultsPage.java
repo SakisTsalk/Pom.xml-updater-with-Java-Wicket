@@ -1,7 +1,7 @@
 package com.sakis.web;
 
 import com.sakis.pomManager.PomxmlManager;
-import com.sakis.pomManager.PomxmxManagerImpl;
+import com.sakis.pomManager.PomxmlManagerImpl;
 import com.sakis.pomManager.pomdepenencies.Dependencies;
 import org.apache.wicket.behavior.AttributeAppender;
 import org.apache.wicket.markup.html.basic.Label;
@@ -21,10 +21,6 @@ import java.util.ArrayList;
 public class ResultsPage extends BasePage {
 
 
-
-    private String UPLOAD_FOLDER = "C:\\Users\\sakis\\Desktop\\THESIS\\";
-
-
     public ResultsPage(final PageParameters parameters) {
 
         ArrayList<Dependencies> dependencylist = new ArrayList<Dependencies>();
@@ -41,7 +37,7 @@ public class ResultsPage extends BasePage {
 
         File fXmlFile = new File(filename);
         File responsefile = new File(uploadfolder+"response.json");
-        PomxmlManager pomxml = new PomxmxManagerImpl();
+        PomxmlManager pomxml = new PomxmlManagerImpl();
         pomxml.GetPomResults(fXmlFile,dependencylist,responsefile);
 
 
@@ -66,9 +62,6 @@ public class ResultsPage extends BasePage {
 
             }
         };
-
-
-
 
 
         pomxml.UpdatePomFile(fXmlFile,dependencylist,filename);

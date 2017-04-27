@@ -26,7 +26,7 @@ import java.util.ArrayList;
 /**
  * Created by sakis on 4/21/2017.
  */
-public class PomxmxManagerImpl implements PomxmlManager {
+public class PomxmlManagerImpl implements PomxmlManager {
 
     @Override
     public void GetPomResults(File fXmlFile, ArrayList<Dependencies> dependencylist, File responsefile) {
@@ -146,8 +146,6 @@ public class PomxmxManagerImpl implements PomxmlManager {
                         JSONArray docs = (JSONArray) resultObject.get("docs");
 
                         JSONObject docsObject = (JSONObject) docs.get(0);
-
-
 
 
                         latestVersion = (String) docsObject.get("latestVersion").toString();

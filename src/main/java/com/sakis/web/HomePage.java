@@ -1,6 +1,5 @@
 package com.sakis.web;
 
-import com.vaadin.server.VaadinService;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.IAjaxIndicatorAware;
@@ -12,7 +11,6 @@ import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 import org.apache.wicket.util.file.File;
 
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 
