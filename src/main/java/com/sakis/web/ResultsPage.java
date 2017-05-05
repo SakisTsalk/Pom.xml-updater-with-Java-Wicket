@@ -24,6 +24,8 @@ import java.util.ArrayList;
 public class ResultsPage extends BasePage {
 
 
+
+
     ArrayList<Dependencies> selecteddependencieslist;
 
 
@@ -52,23 +54,24 @@ public class ResultsPage extends BasePage {
 
         form.add(group);
 
+        final DownloadLink downloadlink = new DownloadLink("link1", fXmlFile, fXmlFile.getName());
+
+
 
         AjaxButton ab = new AjaxButton("done") {
             @Override
             protected void onSubmit(AjaxRequestTarget target, Form form) {
                 if (target!=null) {
 
-                    System.out.println("apo" + selecteddependencieslist.get(0).getNewversion() + " " + selecteddependencieslist.get(0).getVersion());
+                    target.add(downloadlink);
 
                     pomxml.UpdatePomFile(fXmlFile, selecteddependencieslist, filename);
-
-
-
+                    downloadlink.setEnabled(true);
 
                 }
             }
         };
-        group.add(ab);
+        form.add(ab);
         group.add(new CheckGroupSelector("groupselector"));
         ListView<Dependencies> listView = new ListView<Dependencies>("listView", dependencylist){
 
@@ -102,8 +105,10 @@ public class ResultsPage extends BasePage {
 
 
 
+         downloadlink.setOutputMarkupId(true);
 
-        DownloadLink downloadlink = new DownloadLink("link1", fXmlFile, fXmlFile.getName());
+
+        downloadlink.setEnabled(false);
 
         form.add(downloadlink);
 

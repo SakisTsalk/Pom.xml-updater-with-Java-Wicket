@@ -58,7 +58,7 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
                              newFile.createNewFile();
                              uploadedFile.writeTo(newFile);
 
-                             info("saved file: " + uploadedFile.getClientFileName());
+
                          } catch (Exception e) {
                              throw new IllegalStateException("Error");
                          }

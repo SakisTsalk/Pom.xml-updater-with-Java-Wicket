@@ -202,9 +202,7 @@ public class PomxmlManagerImpl implements PomxmlManager {
                           dep = dependencylist.get(i);
                         if (eElement.getElementsByTagName("artifactId").item(0).getTextContent().equals(dep.getArtifactid())) {
                             eElement.getElementsByTagName("version").item(0).setTextContent(dep.getNewversion());
-                              System.out.println("DONE");
-                        }else {
-                            System.out.println(eElement.getElementsByTagName("artifactId").item(0).getTextContent()+"="+dep.getArtifactid());
+
                         }
 
                     }

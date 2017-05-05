@@ -13,39 +13,42 @@
 <wicket:extend>
     <form wicket:id="form">
     <span wicket:id="group">
-      <div style=" height: 350px; overflow: scroll;" class="container">
+      <!--<div style=" height: 350px; overflow: scroll;" class="table-responsive">-->
 
-                <table class="table table-bordered">
+          <table  class="table table-fixed">
             <thead>
             <tr >
-                <th>Group ID</th>
-                <th>Artifact ID</th>
-                <th>Version</th>
-                <th>Newest Version (Online)</th>
-                <th><input type="checkbox" wicket:id="groupselector">check/uncheck all</input> <input   wicket:id="done" type="button" class="btn btn-primary"value="Done"/> </th>
+                <th class="col-xs-3">Group ID</th>
+                <th class="col-xs-3">Artifact ID</th>
+                <th class="col-xs-2">Version</th>
+                <th class="col-xs-2">Newest Version (Online)</th>
+                <th class="col-xs-2"><input type="checkbox" wicket:id="groupselector">Update Libraries</input> </th>
             </tr>
             </thead>
 
             <tbody  >
             <tr wicket:id="listView"  align="left">
 
-                <td><span wicket:id="groupid"></span></td>
+                <td class="col-xs-3"><span wicket:id="groupid"></span></td>
 
-                <td><span wicket:id="artifactid"></span></td>
+                <td class="col-xs-3"><span wicket:id="artifactid"></span></td>
 
-                <td><span wicket:id="version"></span></td>
+                <td class="col-xs-2"><span wicket:id="version"></span></td>
 
-                <td><span wicket:id="newversion"></span></td>
+                <td class="col-xs-2"><span wicket:id="newversion"></span></td>
 
-                <td align="center"><input type="checkbox" wicket:id="check" /></td>
+                <td class="col-xs-2"><input type="checkbox" wicket:id="check" /></td>
 
             </tr>
             </tbody>
         </table>
-        </div>
+
+        <!--</div>-->
      </span>
 
         <p class="small">*Please note that some of the newest versions may not be valid yet. </p>
+
+        <input   wicket:id="done" type="button" class="btn btn-primary"value="Update File"/>
         <button type="button" class="btn btn-primary" wicket:id="link1">Download the updated pom.xml</button>
         <!--<a class="btn" href="#" role="button" wicket:id="link1">Download the updated pom.xml</a>-->
 
