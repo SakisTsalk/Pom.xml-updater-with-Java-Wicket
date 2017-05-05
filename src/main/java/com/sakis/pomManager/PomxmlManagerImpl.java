@@ -186,6 +186,8 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
             NodeList nList = doc.getElementsByTagName("dependency");
 
+           Dependencies dep;
+
 
             for (int temp = 0; temp < nList.getLength(); temp++) {
 
@@ -196,10 +198,16 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
                     Element eElement = (Element) nNode;
 
-                    Dependencies dep = dependencylist.get(temp);
+                    for(int i=0; i<dependencylist.size(); i++) {
+                          dep = dependencylist.get(i);
+                        if (eElement.getElementsByTagName("artifactId").item(0).getTextContent().equals(dep.getArtifactid())) {
+                            eElement.getElementsByTagName("version").item(0).setTextContent(dep.getNewversion());
+                              System.out.println("DONE");
+                        }else {
+                            System.out.println(eElement.getElementsByTagName("artifactId").item(0).getTextContent()+"="+dep.getArtifactid());
+                        }
 
-
-                    eElement.getElementsByTagName("version").item(0).setTextContent(dep.getNewversion());
+                    }
 
                     TransformerFactory transformerFactory = TransformerFactory.newInstance();
                     Transformer transformer = transformerFactory.newTransformer();

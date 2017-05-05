@@ -12,7 +12,9 @@
 <body>
 <wicket:extend>
     <form wicket:id="form">
+    <span wicket:id="group">
       <div style=" height: 350px; overflow: scroll;" class="container">
+
                 <table class="table table-bordered">
             <thead>
             <tr >
@@ -20,6 +22,7 @@
                 <th>Artifact ID</th>
                 <th>Version</th>
                 <th>Newest Version (Online)</th>
+                <th><input type="checkbox" wicket:id="groupselector">check/uncheck all</input> <input   wicket:id="done" type="button" class="btn btn-primary"value="Done"/> </th>
             </tr>
             </thead>
 
@@ -34,14 +37,18 @@
 
                 <td><span wicket:id="newversion"></span></td>
 
+                <td align="center"><input type="checkbox" wicket:id="check" /></td>
 
             </tr>
             </tbody>
         </table>
         </div>
+     </span>
+
         <p class="small">*Please note that some of the newest versions may not be valid yet. </p>
         <button type="button" class="btn btn-primary" wicket:id="link1">Download the updated pom.xml</button>
         <!--<a class="btn" href="#" role="button" wicket:id="link1">Download the updated pom.xml</a>-->
+
     </form>
 </wicket:extend>
 </body>

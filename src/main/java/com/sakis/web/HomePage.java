@@ -22,10 +22,6 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
 
 	public HomePage(final PageParameters parameters) {
 
-
-        System.out.println("Uploading Folder:" +UPLOAD_FOLDER);
-
-
         fileUpload = new FileUploadField("fileUpload");
 
         add(new FeedbackPanel("feedback"));

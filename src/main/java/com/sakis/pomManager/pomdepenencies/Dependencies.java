@@ -1,9 +1,13 @@
 package com.sakis.pomManager.pomdepenencies;
 
+import org.apache.wicket.util.io.IClusterable;
+
+import java.io.Serializable;
+
 /**
  * Created by sakis on 4/4/2017.
  */
-public class Dependencies {
+public class Dependencies implements IClusterable {
 
     String groupid;
     String artifactid;
@@ -48,5 +52,12 @@ public class Dependencies {
 
     public void setVersion(String version) {
         this.version = version;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "GroupID =" + groupid + ", ArtifactID =" + artifactid + ", VersionID =" + version +", Newest Version ="+newversion+
+                "]";
     }
 }

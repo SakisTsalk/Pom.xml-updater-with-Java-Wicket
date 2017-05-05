@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Pom_Dependency_Updater" />
         <module name="thesis1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Pom_Dependency_Updater" target="1.7" />
       <module name="thesis1" target="1.7" />
     </bytecodeTargetLevel>
   </component>
