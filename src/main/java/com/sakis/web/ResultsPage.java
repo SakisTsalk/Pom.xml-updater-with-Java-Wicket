@@ -4,6 +4,7 @@ import com.sakis.pomManager.PomxmlManager;
 import com.sakis.pomManager.PomxmlManagerImpl;
 import com.sakis.pomManager.pomdepenencies.Dependencies;
 import org.apache.wicket.ajax.AjaxRequestTarget;
+import org.apache.wicket.ajax.IAjaxIndicatorAware;
 import org.apache.wicket.ajax.markup.html.form.AjaxButton;
 import org.apache.wicket.behavior.AttributeAppender;
 import org.apache.wicket.markup.html.basic.Label;
@@ -21,7 +22,7 @@ import java.util.ArrayList;
 /**
  * Created by sakis on 3/22/2017.
  */
-public class ResultsPage extends BasePage {
+public class ResultsPage extends BasePage implements IAjaxIndicatorAware {
 
 
 
@@ -84,7 +85,7 @@ public class ResultsPage extends BasePage {
                 item.add(new Label("groupid", dep.getGroupid()));
 
                 item.add(new Label("artifactid", dep.getArtifactid()));
-                if (dep.getVersion().equals(dep.getNewversion())){
+                if (dep.getVersion().equals(dep.getNewversion())||(dep.getNewversion().equals("NOT FOUND"))){
                     versionlabel.add(new AttributeAppender("style", "color:black;"));
                     item.add(new CheckBox("check", Model.of(Boolean.FALSE)).setEnabled(false));}
                     else{
@@ -123,4 +124,9 @@ public class ResultsPage extends BasePage {
 
     }
 
+
+    @Override
+    public String getAjaxIndicatorMarkupId() {
+        return "loadingIndicator_id";
+    }
 }

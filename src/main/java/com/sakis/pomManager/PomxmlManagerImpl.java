@@ -145,10 +145,15 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
                         JSONArray docs = (JSONArray) resultObject.get("docs");
 
-                        JSONObject docsObject = (JSONObject) docs.get(0);
+                        if (docs.isEmpty()){
+                            latestVersion = "NOT FOUND";
+                        }else {
+                            JSONObject docsObject = (JSONObject) docs.get(0);
 
 
-                        latestVersion = (String) docsObject.get("latestVersion").toString();
+                            latestVersion = (String) docsObject.get("latestVersion").toString();
+
+                        }
 
 
                     } catch (Exception e) {
@@ -200,7 +205,7 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
                     for(int i=0; i<dependencylist.size(); i++) {
                           dep = dependencylist.get(i);
-                        if (eElement.getElementsByTagName("artifactId").item(0).getTextContent().equals(dep.getArtifactid())) {
+                        if (eElement.getElementsByTagName("groupId").item(0).getTextContent().equals(dep.getGroupid())&& eElement.getElementsByTagName("artifactId").item(0).getTextContent().equals(dep.getArtifactid())) {
                             eElement.getElementsByTagName("version").item(0).setTextContent(dep.getNewversion());
 
                         }

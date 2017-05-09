@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:wicket="http://wicket.apache.org">
+<html xmlns:wicket="http://wicket.apache.org" xmlns:border="http://www.w3.org/1999/xhtml">
 
 
 
@@ -7,22 +7,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  type="text/css" href="build.css">
+    <link rel="stylesheet" type="text/css" href="awesome-bootstrap-checkbox.css">
 
 </head>
 <body>
 <wicket:extend>
     <form wicket:id="form">
+
+        <h4>Check which dependencies you want to update</h4>
+
     <span wicket:id="group">
       <!--<div style=" height: 350px; overflow: scroll;" class="table-responsive">-->
+
 
           <table  class="table table-fixed">
             <thead>
             <tr >
-                <th class="col-xs-3">Group ID</th>
-                <th class="col-xs-3">Artifact ID</th>
-                <th class="col-xs-2">Version</th>
-                <th class="col-xs-2">Newest Version (Online)</th>
-                <th class="col-xs-2"><input type="checkbox" wicket:id="groupselector">Update Libraries</input> </th>
+                <th class="col-xs-3" style=" border-top: 1px solid #d6d4ff;">Group ID</th>
+                <th class="col-xs-3" style=" border-top: 1px solid #d6d4ff;">Artifact ID</th>
+                <th class="col-xs-2" style=" border-top: 1px solid #d6d4ff;">Version</th>
+                <th class="col-xs-2" style=" border-top: 1px solid #d6d4ff;">Newest Version (Online)</th>
+                <th class="col-xs-2" style="height:40px; text-align: left;  border:none;" ><div class="checkbox checkbox-info"><input id="groupcelector" type="checkbox"  class="styled"  wicket:id="groupselector"><label for="groupcelector">Check/Uncheck All</label></div> </th>
             </tr>
             </thead>
 
@@ -37,7 +45,7 @@
 
                 <td class="col-xs-2"><span wicket:id="newversion"></span></td>
 
-                <td class="col-xs-2"><input type="checkbox" wicket:id="check" /></td>
+                <td class="col-xs-2"  style="height:40px; width:10px;  text-align: left" ><div class="checkbox checkbox-info"><input id="check" type="checkbox" class="styled" wicket:id="check"><label for="check"></label> </div></td>
 
             </tr>
             </tbody>
@@ -48,7 +56,9 @@
 
         <p class="small">*Please note that some of the newest versions may not be valid yet. </p>
 
-        <input   wicket:id="done" type="button" class="btn btn-primary"value="Update File"/>
+        <input   wicket:id="done" type="button" class="btn btn-primary"value="Update File"/> <span id="loadingIndicator_id" style="display:none;"  class="small">
+		<img src="images/ajax-loader.gif"/>
+	</span>
         <button type="button" class="btn btn-primary" wicket:id="link1">Download the updated pom.xml</button>
         <!--<a class="btn" href="#" role="button" wicket:id="link1">Download the updated pom.xml</a>-->
 
