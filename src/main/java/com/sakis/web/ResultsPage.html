@@ -19,6 +19,7 @@
 
         <h4>Check which dependencies you want to update</h4>
 
+
     <span wicket:id="group">
       <!--<div style=" height: 350px; overflow: scroll;" class="table-responsive">-->
 
@@ -29,13 +30,13 @@
                 <th class="col-xs-3" style=" border-top: 1px solid #d6d4ff;">Group ID</th>
                 <th class="col-xs-3" style=" border-top: 1px solid #d6d4ff;">Artifact ID</th>
                 <th class="col-xs-2" style=" border-top: 1px solid #d6d4ff;">Version</th>
-                <th class="col-xs-2" style=" border-top: 1px solid #d6d4ff;">Newest Version (Online)</th>
-                <th class="col-xs-2" style="height:40px; text-align: left;  border:none;" ><div class="checkbox checkbox-info"><input id="groupcelector" type="checkbox"  class="styled"  wicket:id="groupselector"><label for="groupcelector">Check/Uncheck All</label></div> </th>
+                <th class="col-xs-2" style=" border-top: 1px solid #d6d4ff;">Newest Version</th>
+                <th class="col-xs-2" style="height:40px; text-align: left; border-top: 1px solid #d6d4ff;" ><div class="checkbox checkbox-info"><input id="groupcelector" type="checkbox"  class="styled"  wicket:id="groupselector"><label for="groupcelector">Check/Uncheck All</label></div> </th>
             </tr>
             </thead>
 
             <tbody  >
-            <tr wicket:id="listView"  align="left">
+            <tr wicket:id="listView">
 
                 <td class="col-xs-3"><span wicket:id="groupid"></span></td>
 
@@ -45,7 +46,7 @@
 
                 <td class="col-xs-2"><span wicket:id="newversion"></span></td>
 
-                <td class="col-xs-2"  style="height:40px; width:10px;  text-align: left" ><div class="checkbox checkbox-info"><input id="check" type="checkbox" class="styled" wicket:id="check"><label for="check"></label> </div></td>
+                <td class="col-xs-2"  style="height:40px;   text-align: left" ><div class="checkbox checkbox-info"><input id="check" type="checkbox" class="styled" wicket:id="check"><label for="check"></label> </div></td>
 
             </tr>
             </tbody>

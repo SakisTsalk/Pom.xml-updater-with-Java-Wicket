@@ -93,9 +93,11 @@
 
         .table-fixed thead {
             width: 98.7%;
+            align-items:center;
+            border-right: 1px solid #d6d4ff;
         }
         .table-fixed tbody {
-            height: 280px;
+            height: 281px;
             overflow-y: scroll;
             width: 100%;
         }
@@ -107,12 +109,17 @@
             float: left;
             border-right: 1px solid #d6d4ff;
             border-collapse: collapse;
+            border-left: 1px solid #d6d4ff;
         }
 
 
         .table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td:last-child {
-            border :none;
-            background-color: #ffffff;
+
+            border-right: 1px solid #d6d4ff;
+        }
+
+        .table-fixed tbody, .table-fixed tr:last-child {
+            border-bottom: 1px solid #cccccc;
         }
 
 
