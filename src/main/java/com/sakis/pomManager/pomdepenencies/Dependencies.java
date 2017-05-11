@@ -13,6 +13,26 @@ public class Dependencies implements IClusterable {
     String artifactid;
     String version;
     String newversion;
+    String newversiondate;
+
+
+
+    public Dependencies(String groupid, String artifactid, String version, String newversion, String newversiondate) {
+        this.groupid = groupid;
+        this.artifactid = artifactid;
+        this.version = version;
+        this.newversion = newversion;
+        this.newversiondate = newversiondate;
+
+    }
+
+    public String getNewversiondate() {
+        return newversiondate;
+    }
+
+    public void setNewversiondate(String newversiondate) {
+        this.newversiondate = newversiondate;
+    }
 
     public String getNewversion() {
         return newversion;
@@ -20,14 +40,6 @@ public class Dependencies implements IClusterable {
 
     public void setNewversion(String newversion) {
         this.newversion = newversion;
-    }
-
-    public Dependencies(String groupid, String artifactid, String version, String newversion) {
-        this.groupid = groupid;
-        this.artifactid = artifactid;
-        this.version = version;
-        this.newversion = newversion;
-
     }
 
     public String getGroupid() {

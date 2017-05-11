@@ -21,7 +21,9 @@ import java.io.File;
 import java.io.FileReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Created by sakis on 4/21/2017.
@@ -30,6 +32,7 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
     @Override
     public void GetPomResults(File fXmlFile, ArrayList<Dependencies> dependencylist, File responsefile) {
+
         ArrayList<Properties> propertieslist = new ArrayList<Properties>();
 
         Document doc;
@@ -41,6 +44,13 @@ public class PomxmlManagerImpl implements PomxmlManager {
         String propName;
         String propVersion;
         String newVersion;
+
+        long timestamp;
+        Date newVersionDate;
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/M/yyyy");
+        String date = new String();
+
+        URL url = null;
 
         try{
 
@@ -66,8 +76,10 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
                     NodeList n1 = eElement.getElementsByTagName("*");
 
+                    Node eNode;
+
                     for (int i = 0; i < n1.getLength(); i++) {
-                        Node eNode = n1.item(i);
+                         eNode = n1.item(i);
 
                         propName = eNode.getNodeName();
                         propVersion = eNode.getTextContent();
@@ -83,23 +95,35 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
             NodeList nList = doc.getElementsByTagName("dependency");
 
+            Node nNode;
+
+            Element eElement;
+
+            JSONParser parser;
+            Object obj;
+            JSONObject jsonObject;
+            JSONObject resultObject;
+            JSONObject docsObject;
+            JSONArray docs;
+
             for (int temp = 0; temp < nList.getLength(); temp++) {
 
-                Node nNode = nList.item(temp);
+                 nNode = nList.item(temp);
 
+                NodeList n1;
 
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 
 
 
-                    Element eElement = (Element) nNode;
+                     eElement = (Element) nNode;
 
 
                     groupidString =   eElement.getElementsByTagName("groupId").item(0).getTextContent();
                     artifactidString = eElement.getElementsByTagName("artifactId").item(0).getTextContent();
 
 
-                    NodeList n1 = eElement.getElementsByTagName("version");
+                     n1 = eElement.getElementsByTagName("version");
                     if (n1.getLength() > 0) {
                         versionString = n1.item(0).getTextContent();
                     }
@@ -115,7 +139,7 @@ public class PomxmlManagerImpl implements PomxmlManager {
                         }
                     }
 
-                    URL url = null;
+
                     try {
                         url = new URL( "http://search.maven.org/solrsearch/select?q=g:%22"+groupidString+"%22%20AND%20a:%22"+artifactidString+"%22&rows=20&wt=json");
                     } catch (MalformedURLException e) {
@@ -131,25 +155,32 @@ public class PomxmlManagerImpl implements PomxmlManager {
                         e.printStackTrace();
                     }
 
-                    JSONParser parser = new JSONParser();
+                     parser = new JSONParser();
 
                     try {
 
-                        Object obj = parser.parse(new FileReader(responsefile));
+                         obj = parser.parse(new FileReader(responsefile));
 
-                        JSONObject jsonObject = (JSONObject) obj;
+                         jsonObject = (JSONObject) obj;
 
-                        JSONObject resultObject = (JSONObject) jsonObject.get("response");
+                         resultObject = (JSONObject) jsonObject.get("response");
 
-                        JSONArray docs = (JSONArray) resultObject.get("docs");
+                         docs = (JSONArray) resultObject.get("docs");
 
                         if (docs.isEmpty()){
                             latestVersion = "NOT FOUND";
+                            date = "NOT FOUND";
                         }else {
-                            JSONObject docsObject = (JSONObject) docs.get(0);
-
+                             docsObject = (JSONObject) docs.get(0);
 
                             latestVersion = (String) docsObject.get("latestVersion").toString();
+
+                            timestamp = (long) docsObject.get("timestamp");
+
+                            newVersionDate = new Date(timestamp);
+
+                             date = sdf.format(newVersionDate);
+
 
                         }
 
@@ -159,7 +190,7 @@ public class PomxmlManagerImpl implements PomxmlManager {
                     }
 
 
-                    Dependencies dependency = new Dependencies(groupidString, artifactidString, versionString, latestVersion);
+                    Dependencies dependency = new Dependencies(groupidString, artifactidString, versionString, latestVersion,date);
 
                     dependencylist.add(dependency);
 
@@ -191,15 +222,18 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
            Dependencies dep;
 
+            Node nNode;
+
+            Element eElement;
 
             for (int temp = 0; temp < nList.getLength(); temp++) {
 
-                Node nNode = nList.item(temp);
+                 nNode = nList.item(temp);
 
 
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 
-                    Element eElement = (Element) nNode;
+                     eElement = (Element) nNode;
 
                     for(int i=0; i<dependencylist.size(); i++) {
                           dep = dependencylist.get(i);

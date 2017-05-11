@@ -86,7 +86,7 @@ public class ResultsPage extends BasePage implements IAjaxIndicatorAware {
 
                 item.add(new Label("artifactid", dep.getArtifactid()));
                 if (dep.getVersion().equals(dep.getNewversion())||(dep.getNewversion().equals("NOT FOUND"))){
-                    versionlabel.add(new AttributeAppender("style", "color:black;"));
+                    versionlabel.add(new AttributeAppender("style", "color:green;"));
                     item.add(new CheckBox("check", Model.of(Boolean.FALSE)).setEnabled(false));}
                     else{
                     versionlabel.add(new AttributeAppender("style", "color:red;"));
@@ -96,6 +96,8 @@ public class ResultsPage extends BasePage implements IAjaxIndicatorAware {
                 item.add(versionlabel);
 
                 item.add(new Label("newversion", dep.getNewversion()));
+
+                item.add(new Label("newversiondate", dep.getNewversiondate()));
 
             }
         };

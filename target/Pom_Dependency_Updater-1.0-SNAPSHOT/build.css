@@ -11,8 +11,8 @@
   content: "";
   display: inline-block;
   position: absolute;
-  width: 17px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   left: 0;
   margin-left: -20px;
   border: 1px solid #cccccc;
@@ -24,8 +24,8 @@
 .checkbox label::after {
   display: inline-block;
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   left: 0;
   top: 0;
   margin-left: -20px;
