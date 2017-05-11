@@ -24,13 +24,18 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
 
         fileUpload = new FileUploadField("fileUpload");
 
-        add(new FeedbackPanel("feedback"));
+       final FeedbackPanel feedbackPanel = new FeedbackPanel("feedback");
+
+        add(feedbackPanel);
+
+        feedbackPanel.setOutputMarkupId(true);
          Form<?> form = new Form<Void>("form");
 
 
         AjaxButton ab = new AjaxButton("submit") {
             protected void onSubmit(AjaxRequestTarget target, Form form) {
 
+                target.add(feedbackPanel);
 
                 if (target!=null)
             {
@@ -42,9 +47,6 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
                      String name = uploadedFile.getClientFileName();
 
                      if (name.equals("pom.xml") && (extension.equals("xml"))) {
-
-
-
 
 
                          File newFile = new File(UPLOAD_FOLDER
@@ -84,7 +86,6 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
         form.setMultiPart(true);
 
         //form.setMaxSize(Bytes.kilobytes(30));
-
 
 
         fileUpload.setRequired(true);

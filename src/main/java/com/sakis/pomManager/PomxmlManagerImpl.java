@@ -51,7 +51,7 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
             doc.getDocumentElement().normalize();
 
-            NodeList nList = doc.getElementsByTagName("dependency");
+
 
 
             NodeList pList = doc.getElementsByTagName("properties");
@@ -81,6 +81,8 @@ public class PomxmlManagerImpl implements PomxmlManager {
                 }
             }
 
+            NodeList nList = doc.getElementsByTagName("dependency");
+
             for (int temp = 0; temp < nList.getLength(); temp++) {
 
                 Node nNode = nList.item(temp);
@@ -95,8 +97,6 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
                     groupidString =   eElement.getElementsByTagName("groupId").item(0).getTextContent();
                     artifactidString = eElement.getElementsByTagName("artifactId").item(0).getTextContent();
-
-
 
 
                     NodeList n1 = eElement.getElementsByTagName("version");
@@ -138,8 +138,6 @@ public class PomxmlManagerImpl implements PomxmlManager {
                         Object obj = parser.parse(new FileReader(responsefile));
 
                         JSONObject jsonObject = (JSONObject) obj;
-
-                        // JSONArray results = (JSONArray) jsonObject.get("response");
 
                         JSONObject resultObject = (JSONObject) jsonObject.get("response");
 
@@ -217,9 +215,6 @@ public class PomxmlManagerImpl implements PomxmlManager {
                     DOMSource source = new DOMSource(doc);
                     StreamResult result = new StreamResult(new File(filename));
                     transformer.transform(source, result);
-
-
-
                 }
             }
 
