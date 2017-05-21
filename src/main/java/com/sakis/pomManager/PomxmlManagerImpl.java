@@ -24,6 +24,7 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by sakis on 4/21/2017.
@@ -50,6 +51,7 @@ public class PomxmlManagerImpl implements PomxmlManager {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/M/yyyy");
         String date = new String();
 
+        Properties properties;
         URL url = null;
 
         try{
@@ -64,15 +66,15 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
 
 
-            NodeList pList = doc.getElementsByTagName("properties");
+            NodeList propertiesList = doc.getElementsByTagName("properties");
 
-            if (pList.getLength()!= 0) {
+            if (propertiesList.getLength()!= 0) {
 
-                Node pNode = pList.item(0);
+                Node propertiesNode = propertiesList.item(0);
 
 
-                if (pNode.getNodeType() == Node.ELEMENT_NODE) {
-                    Element eElement = (Element) pNode;
+                if (propertiesNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Element eElement = (Element) propertiesNode;
 
                     NodeList n1 = eElement.getElementsByTagName("*");
 
@@ -85,7 +87,7 @@ public class PomxmlManagerImpl implements PomxmlManager {
                         propVersion = eNode.getTextContent();
 
 
-                        Properties properties = new Properties(propName, propVersion);
+                         properties = new Properties(propName, propVersion);
 
                         propertieslist.add(properties);
 
@@ -93,7 +95,13 @@ public class PomxmlManagerImpl implements PomxmlManager {
                 }
             }
 
-            NodeList nList = doc.getElementsByTagName("dependency");
+            NodeList dependencyList = doc.getElementsByTagName("dependency");
+
+            NodeList pluginsList = doc.getElementsByTagName("plugin");
+
+            List<Node> mergedList = ConcatLists(dependencyList,pluginsList);
+
+
 
             Node nNode;
 
@@ -106,9 +114,9 @@ public class PomxmlManagerImpl implements PomxmlManager {
             JSONObject docsObject;
             JSONArray docs;
 
-            for (int temp = 0; temp < nList.getLength(); temp++) {
+            for (int temp = 0; temp < mergedList.size(); temp++) {
 
-                 nNode = nList.item(temp);
+                 nNode = mergedList.get(temp);
 
                 NodeList n1;
 
@@ -141,7 +149,9 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
 
                     try {
-                        url = new URL( "http://search.maven.org/solrsearch/select?q=g:%22"+groupidString+"%22%20AND%20a:%22"+artifactidString+"%22&rows=20&wt=json");
+//                        url = new URL( "http://search.maven.org/solrsearch/select?q=g:%22"+groupidString+"%22+AND+a:%22"+artifactidString+"%22&core=gav&rows=20&wt=json");
+
+                       url = new URL( "http://search.maven.org/solrsearch/select?q=g:%22"+groupidString+"%22%20AND%20a:%22"+artifactidString+"%22&rows=20&wt=json");
                     } catch (MalformedURLException e) {
                         e.printStackTrace();
                     }
@@ -169,7 +179,7 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
                         if (docs.isEmpty()){
                             latestVersion = "NOT FOUND";
-                            date = "NOT FOUND";
+                            date = "-";
                         }else {
                              docsObject = (JSONObject) docs.get(0);
 
@@ -218,7 +228,11 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
             doc.getDocumentElement().normalize();
 
-            NodeList nList = doc.getElementsByTagName("dependency");
+            NodeList dependencyList = doc.getElementsByTagName("dependency");
+
+            NodeList pluginsList = doc.getElementsByTagName("plugin");
+
+            List<Node> mergedList = ConcatLists(dependencyList,pluginsList);
 
            Dependencies dep;
 
@@ -226,10 +240,9 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
             Element eElement;
 
-            for (int temp = 0; temp < nList.getLength(); temp++) {
+            for (int temp = 0; temp < mergedList.size(); temp++) {
 
-                 nNode = nList.item(temp);
-
+                 nNode = mergedList.get(temp);
 
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 
@@ -256,4 +269,26 @@ public class PomxmlManagerImpl implements PomxmlManager {
             e.printStackTrace();
         }
     }
+
+  public List<Node>  ConcatLists(NodeList lista, NodeList listb) {
+
+
+      List<Node> mergedList = new ArrayList<Node>();
+
+      int listaLength = lista.getLength();
+      int listbLength = listb.getLength();
+
+      if(listaLength>0)
+      {
+          for (int i = 0; i < listaLength; i++)
+              mergedList.add(lista.item(i));
+      }
+
+      if(listbLength>0)
+      {
+          for (int i = 0; i < listbLength; i++)
+              mergedList.add(listb.item(i));
+      }
+        return  mergedList;
+  }
 }

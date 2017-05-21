@@ -15,8 +15,8 @@
   height: 20px;
   left: 0;
   margin-left: -20px;
-  border: 1px solid #cccccc;
-  border-radius: 3px;
+  border: 0px solid #cccccc;
+  border-radius: 0px;
   background-color: #fff;
   -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
   -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
