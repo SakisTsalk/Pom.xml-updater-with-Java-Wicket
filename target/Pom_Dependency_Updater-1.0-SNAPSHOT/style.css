@@ -5,9 +5,14 @@ html, body {
 	height: 100%;
 
 }
-.wrapper {
+body{
 
+}
+.wrapper {
 	height: 96%;
+
+
+
 }
 
 #hd {
@@ -101,10 +106,12 @@ h3 {
 
 /* Set black background color, white text and some padding */
 footer {
+
 	background-color: white;
-	position:static;
+	position: relative;
 	bottom: 0;
 	height: 4%;
+
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
@@ -176,4 +183,7 @@ footer {
 .table-fixed tbody, .table-fixed tr:last-child {
 	border-bottom: 1px solid #cccccc;
 }
+
+
+
 
