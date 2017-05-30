@@ -22,48 +22,39 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
 
 	public HomePage(final PageParameters parameters) {
 
-        fileUpload = new FileUploadField("fileUpload");
+
 
        final FeedbackPanel feedbackPanel = new FeedbackPanel("feedback");
 
         add(feedbackPanel);
 
         feedbackPanel.setOutputMarkupId(true);
+
          Form<?> form = new Form<Void>("form");
 
 
         AjaxButton ab = new AjaxButton("submit") {
             protected void onSubmit(AjaxRequestTarget target, Form form) {
-
                 target.add(feedbackPanel);
-
-                if (target!=null)
-            {
-
-                final FileUpload uploadedFile = fileUpload.getFileUpload();
-                 if (uploadedFile != null) {
+                if (target!=null) {
+                   final FileUpload uploadedFile = fileUpload.getFileUpload();
+                   if (uploadedFile != null) {
 
                      String extension = FilenameUtils.getExtension(uploadedFile.getClientFileName());
                      String name = uploadedFile.getClientFileName();
 
                      if (name.equals("pom.xml") && (extension.equals("xml"))) {
 
-
-                         File newFile = new File(UPLOAD_FOLDER
+                           File newFile = new File(UPLOAD_FOLDER
                                  + uploadedFile.getClientFileName());
-
                          if (newFile.exists()) {
-                             newFile.delete();
-                         }
+                             newFile.delete();}
 
                          try {
                              newFile.createNewFile();
                              uploadedFile.writeTo(newFile);
-
-
                          } catch (Exception e) {
-                             throw new IllegalStateException("Error");
-                         }
+                             throw new IllegalStateException("Error");}
 
                          PageParameters pageParameters = new PageParameters();
 
@@ -86,9 +77,10 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
         form.setMultiPart(true);
 
         //form.setMaxSize(Bytes.kilobytes(30));
-
+        fileUpload = new FileUploadField("fileUpload");
 
         fileUpload.setRequired(true);
+
 
         form.add(fileUpload);
 

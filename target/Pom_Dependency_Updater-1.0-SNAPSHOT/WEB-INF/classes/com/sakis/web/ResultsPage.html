@@ -29,12 +29,12 @@
           <table  class="table table-fixed" >
             <thead>
             <tr >
-                <th  style="width:25%;height:40px; border-top: 1px solid #d6d4ff; background-color: #006699;">Group ID</th>
-                <th  style="width:16.6%; height:40px; border-top: 1px solid #d6d4ff; background-color: #006699;">Artifact ID</th>
-                <th  style="width:16.6%; height:40px; border-top: 1px solid #d6d4ff; background-color: #006699;">Version</th>
-                <th  style="width:16.6%; height:40px; border-top: 1px solid #d6d4ff; background-color: #006699;">Newest Version</th>
-                <th  style="width:8.3%; height:40px; border-top: 1px solid #d6d4ff; background-color: #006699;">Updated</th>
-                <th  style="width:16.6%; background-color: #006699; height:40px; text-align: left; border-top: 1px solid white; border-right: 1px solid white;" ><input id="groupcelector" type="checkbox"  style="transform: scale(1.5);  "  wicket:id="groupselector"><label style="margin-left: 5px; position: absolute">   Check/Uncheck All</label> </th>
+                <th  style="width:25%;height:48px; border-top: 1px solid #d6d4ff; background-color: #006699;">Group ID</th>
+                <th  style="width:16.6%; height:48px; border-top: 1px solid #d6d4ff; background-color: #006699;">Artifact ID</th>
+                <th  style="width:16.6%; height:48px; border-top: 1px solid #d6d4ff; background-color: #006699;">Version</th>
+                <th  style="width:16.6%; height:48px; border-top: 1px solid #d6d4ff; background-color: #006699;">Newest Version</th>
+                <th  style="width:8.3%; height:48px; border-top: 1px solid #d6d4ff; background-color: #006699;">Updated</th>
+                <th  style="width:16.6%; background-color: #006699; height:48px; text-align: left; border-top: 1px solid white; border-right: 1px solid white;" ><input id="groupcelector" type="checkbox"  style="transform: scale(1.5);  "  wicket:id="groupselector"><label style="margin-left: 5px; position: absolute">   Check/Uncheck All</label> </th>
             </tr>
             </thead>
 
@@ -42,19 +42,11 @@
             <tr wicket:id="listView">
 
                 <td  style="width:25%; height:48px;"><span wicket:id="groupid"></span></td>
-
                 <td  style="width:16.6%; height:48px;"><span wicket:id="artifactid"></span></td>
-
                 <td style="width:16.6%; height:48px;"><span wicket:id="version"></span></td>
-
                 <td style="width:16.6%; height:48px;"><span wicket:id="newversion"></span></td>
-
                 <td style= "width:8.3%; height:48px;"><span wicket:id="newversiondate"></span></td>
-
-                <!--<td style="height:48px; width:16.6%;   text-align: left" ><div class="checkbox checkbox-primary"><input id="check" type="checkbox"  wicket:id="check"><label for="check"></label> </div></td>-->
                 <td style="height:48px; width:16.6%;   text-align: left" ><input id="check" type="checkbox" style="transform: scale(1.5); margin-top: 10px;"  wicket:id="check"> </td>
-
-
             </tr>
             </tbody>
         </table>

@@ -113,6 +113,26 @@ footer {
 
 }
 
+@media screen and (min-width: 480px) and (max-width:1400px){
+  footer {
+   top:610px;
+}
+}
+
+@media screen and (max-width: 480px) {
+	footer {
+		top:400px;
+	}
+}
+@media screen and (min-width:1400px) {
+	footer {
+		top:1000px;
+	}
+}
+
+
+
+
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
 	.sidenav {
@@ -175,7 +195,7 @@ footer {
 
 .table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td:last-child {
 
-
+	word-break: break-all;
 	border-right: 1px solid #d6d4ff;
 }
 

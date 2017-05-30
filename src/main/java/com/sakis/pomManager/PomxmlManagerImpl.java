@@ -31,6 +31,7 @@ import java.util.List;
  */
 public class PomxmlManagerImpl implements PomxmlManager {
 
+    // Function for parsing the pom.xml file getting its dependencies and plugins and searching for the newest versions.
     @Override
     public void GetPomResults(File fXmlFile, ArrayList<Dependencies> dependencylist, File responsefile) {
 
@@ -56,14 +57,11 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
         try{
 
-
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             doc = dBuilder.parse(fXmlFile);
 
             doc.getDocumentElement().normalize();
-
-
 
 
             NodeList propertiesList = doc.getElementsByTagName("properties");
@@ -72,12 +70,10 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
                 Node propertiesNode = propertiesList.item(0);
 
-
                 if (propertiesNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element eElement = (Element) propertiesNode;
 
                     NodeList n1 = eElement.getElementsByTagName("*");
-
                     Node eNode;
 
                     for (int i = 0; i < n1.getLength(); i++) {
@@ -86,20 +82,18 @@ public class PomxmlManagerImpl implements PomxmlManager {
                         propName = eNode.getNodeName();
                         propVersion = eNode.getTextContent();
 
-
-                         properties = new Properties(propName, propVersion);
-
+                        properties = new Properties(propName, propVersion);
                         propertieslist.add(properties);
 
                     }
                 }
             }
 
-            NodeList dependencyList = doc.getElementsByTagName("dependency");
+            NodeList dependencynodelist = doc.getElementsByTagName("dependency");
 
-            NodeList pluginsList = doc.getElementsByTagName("plugin");
+            NodeList pluginsnodelist = doc.getElementsByTagName("plugin");
 
-            List<Node> mergedList = ConcatLists(dependencyList,pluginsList);
+            List<Node> mergedList = ConcatLists(dependencynodelist,pluginsnodelist);
 
 
 
@@ -122,20 +116,19 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 
-
-
-                     eElement = (Element) nNode;
-
+                    eElement = (Element) nNode;
 
                     groupidString =   eElement.getElementsByTagName("groupId").item(0).getTextContent();
                     artifactidString = eElement.getElementsByTagName("artifactId").item(0).getTextContent();
 
 
-                     n1 = eElement.getElementsByTagName("version");
+                    n1 = eElement.getElementsByTagName("version");
+
                     if (n1.getLength() > 0) {
                         versionString = n1.item(0).getTextContent();
+                    }else {
+                        versionString = "NOT FOUND";
                     }
-
                     if (versionString.startsWith("${")) {
                         newVersion = versionString.replaceAll("[${}]", "");
 
@@ -147,16 +140,12 @@ public class PomxmlManagerImpl implements PomxmlManager {
                         }
                     }
 
-
                     try {
-//                        url = new URL( "http://search.maven.org/solrsearch/select?q=g:%22"+groupidString+"%22+AND+a:%22"+artifactidString+"%22&core=gav&rows=20&wt=json");
 
                        url = new URL( "http://search.maven.org/solrsearch/select?q=g:%22"+groupidString+"%22%20AND%20a:%22"+artifactidString+"%22&rows=20&wt=json");
                     } catch (MalformedURLException e) {
                         e.printStackTrace();
                     }
-
-
 
                     try {
                         FileUtils.copyURLToFile(url, responsefile);
@@ -164,17 +153,12 @@ public class PomxmlManagerImpl implements PomxmlManager {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-
                      parser = new JSONParser();
-
                     try {
 
                          obj = parser.parse(new FileReader(responsefile));
-
                          jsonObject = (JSONObject) obj;
-
                          resultObject = (JSONObject) jsonObject.get("response");
-
                          docs = (JSONArray) resultObject.get("docs");
 
                         if (docs.isEmpty()){
@@ -182,32 +166,20 @@ public class PomxmlManagerImpl implements PomxmlManager {
                             date = "-";
                         }else {
                              docsObject = (JSONObject) docs.get(0);
-
                             latestVersion = (String) docsObject.get("latestVersion").toString();
-
                             timestamp = (long) docsObject.get("timestamp");
-
                             newVersionDate = new Date(timestamp);
-
-                             date = sdf.format(newVersionDate);
-
-
+                            date = sdf.format(newVersionDate);
                         }
-
 
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
 
-
                     Dependencies dependency = new Dependencies(groupidString, artifactidString, versionString, latestVersion,date);
-
                     dependencylist.add(dependency);
 
-
-
                 }
-
             }
 
         }catch (Exception e) {
@@ -215,6 +187,7 @@ public class PomxmlManagerImpl implements PomxmlManager {
         }
     }
 
+    // Function which updates the pom.xml file with the selected newest versions
     @Override
     public void UpdatePomFile(File fXmlFile, ArrayList<Dependencies> dependencylist,String filename) {
         try {
@@ -228,11 +201,10 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
             doc.getDocumentElement().normalize();
 
-            NodeList dependencyList = doc.getElementsByTagName("dependency");
+            NodeList dependencynodelist = doc.getElementsByTagName("dependency");
+            NodeList pluginsnodelist = doc.getElementsByTagName("plugin");
 
-            NodeList pluginsList = doc.getElementsByTagName("plugin");
-
-            List<Node> mergedList = ConcatLists(dependencyList,pluginsList);
+            List<Node> mergedList = ConcatLists(dependencynodelist,pluginsnodelist);
 
            Dependencies dep;
 
@@ -250,10 +222,15 @@ public class PomxmlManagerImpl implements PomxmlManager {
 
                     for(int i=0; i<dependencylist.size(); i++) {
                           dep = dependencylist.get(i);
-                        if (eElement.getElementsByTagName("groupId").item(0).getTextContent().equals(dep.getGroupid())&& eElement.getElementsByTagName("artifactId").item(0).getTextContent().equals(dep.getArtifactid())) {
-                            eElement.getElementsByTagName("version").item(0).setTextContent(dep.getNewversion());
+                        if ( eElement.getElementsByTagName("version").getLength()>0) {
+                            if (eElement.getElementsByTagName("groupId").item(0).getTextContent().equals(dep.getGroupid()) &&
+                                    eElement.getElementsByTagName("artifactId").item(0).getTextContent().equals(dep.getArtifactid())) {
 
-                        }
+                                eElement.getElementsByTagName("version").item(0).setTextContent(dep.getNewversion());
+
+                            }
+                        }else {
+                                 eElement.appendChild(doc.createElement("version")).setTextContent(dep.getNewversion());                   }
 
                     }
 
@@ -270,25 +247,22 @@ public class PomxmlManagerImpl implements PomxmlManager {
         }
     }
 
+    //adding 2 NodeLists to a List<Node>
   public List<Node>  ConcatLists(NodeList lista, NodeList listb) {
 
-
       List<Node> mergedList = new ArrayList<Node>();
-
       int listaLength = lista.getLength();
       int listbLength = listb.getLength();
 
       if(listaLength>0)
       {
           for (int i = 0; i < listaLength; i++)
-              mergedList.add(lista.item(i));
-      }
+              mergedList.add(lista.item(i));}
 
       if(listbLength>0)
       {
           for (int i = 0; i < listbLength; i++)
-              mergedList.add(listb.item(i));
-      }
+              mergedList.add(listb.item(i));}
         return  mergedList;
   }
 }
