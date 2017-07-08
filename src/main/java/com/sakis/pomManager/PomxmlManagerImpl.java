@@ -127,7 +127,7 @@ public class PomxmlManagerImpl implements PomxmlManager {
                     if (n1.getLength() > 0) {
                         versionString = n1.item(0).getTextContent();
                     }else {
-                        versionString = "NOT FOUND";
+                        versionString = "Inherited";
                     }
                     if (versionString.startsWith("${")) {
                         newVersion = versionString.replaceAll("[${}]", "");
@@ -225,13 +225,11 @@ public class PomxmlManagerImpl implements PomxmlManager {
                         if ( eElement.getElementsByTagName("version").getLength()>0) {
                             if (eElement.getElementsByTagName("groupId").item(0).getTextContent().equals(dep.getGroupid()) &&
                                     eElement.getElementsByTagName("artifactId").item(0).getTextContent().equals(dep.getArtifactid())) {
-
                                 eElement.getElementsByTagName("version").item(0).setTextContent(dep.getNewversion());
-
                             }
-                        }else {
-                                 eElement.appendChild(doc.createElement("version")).setTextContent(dep.getNewversion());                   }
-
+                        }
+//                        else {
+//                                 eElement.appendChild(doc.createElement("version")).setTextContent(dep.getNewversion());  }
                     }
 
                     TransformerFactory transformerFactory = TransformerFactory.newInstance();

@@ -85,7 +85,7 @@ public class ResultsPage extends BasePage implements IAjaxIndicatorAware {
                 item.add(new Label("groupid", dep.getGroupid()));
 
                 item.add(new Label("artifactid", dep.getArtifactid()));
-                if (dep.getVersion().equals(dep.getNewversion())||(dep.getNewversion().equals("NOT FOUND"))){
+                if (dep.getVersion().equals(dep.getNewversion())||(dep.getNewversion().equals("NOT FOUND")) || (dep.getVersion().equals("Inherited")) ){
                     versionlabel.add(new AttributeAppender("style", "color:green;"));
                     item.add(new CheckBox("check", Model.of(Boolean.FALSE)).setEnabled(false));}
                     else{
