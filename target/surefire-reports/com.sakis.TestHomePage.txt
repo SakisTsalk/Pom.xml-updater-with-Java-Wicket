@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.sakis.TestHomePage
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.544 sec
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.014 sec
+>>>>>>> 1626edc028fc95877a6a74d7a9f930a7f4fc7adc
