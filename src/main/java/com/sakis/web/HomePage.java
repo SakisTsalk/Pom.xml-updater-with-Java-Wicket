@@ -23,7 +23,7 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
 
     private FileUploadField fileUpload;
 
-    private String UPLOAD_FOLDER = "C:\\PomUploads\\";
+    private String UPLOAD_FOLDER = "PomUploads\\";
 
 
     public HomePage(final PageParameters parameters) {
@@ -124,7 +124,7 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
 
             if ((number = file.readLine()) != null) {
                 inputBuffer.append(number);
-
+                usercount = Integer.parseInt(number);
             }
 
             file.close();
@@ -132,7 +132,7 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
 
             String inputStr = inputBuffer.toString();
 
-            usercount = Integer.parseInt(number);
+
 
              int newcount = usercount + 1;
              inputStr =  String.valueOf(newcount);
