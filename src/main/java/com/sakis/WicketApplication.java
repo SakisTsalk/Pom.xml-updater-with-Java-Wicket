@@ -52,7 +52,7 @@ public class WicketApplication extends WebApplication
 				}
 			}
 
-			File userstxt = new File("pomuploads\\users.txt");
+			File userstxt = new File("pomuploads"+File.separator+"users.txt");
 
 			if (userstxt.createNewFile()){
 				System.out.println("File is created!");
