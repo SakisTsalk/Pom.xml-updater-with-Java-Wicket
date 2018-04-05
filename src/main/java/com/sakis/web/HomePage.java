@@ -23,7 +23,7 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
 
     private FileUploadField fileUpload;
 
-    private String UPLOAD_FOLDER = "PomUploads\\";
+    private String UPLOAD_FOLDER = "pomuploads/";
 
 
     public HomePage(final PageParameters parameters) {
@@ -59,7 +59,7 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
                             File dir = new File(UPLOAD_FOLDER + usercount);
                             dir.mkdir();
 
-                            File newFile = new File(UPLOAD_FOLDER + usercount +"\\"
+                            File newFile = new File(UPLOAD_FOLDER + usercount +"/"
                                     + uploadedFile.getClientFileName());
                             if (newFile.exists()) {
                                 newFile.delete();
@@ -74,10 +74,10 @@ public class HomePage extends BasePage implements IAjaxIndicatorAware {
 
                             PageParameters pageParameters = new PageParameters();
 
-                            pageParameters.add("filename", UPLOAD_FOLDER + usercount +"\\"
+                            pageParameters.add("filename", UPLOAD_FOLDER + usercount +"/"
                                     + uploadedFile.getClientFileName());
 
-                            pageParameters.add("uploadfolder", UPLOAD_FOLDER + usercount +"\\");
+                            pageParameters.add("uploadfolder", UPLOAD_FOLDER + usercount +"/");
 
 
                             setResponsePage(ResultsPage.class, pageParameters);
