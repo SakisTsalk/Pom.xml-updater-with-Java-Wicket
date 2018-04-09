@@ -28,6 +28,14 @@ public class AboutPage extends BasePage {
             }
         };
         form.add(homePageLink2);
+
+        Link homePageLink3 = new Link("homePage3") {
+            @Override
+            public void onClick() {
+                setResponsePage(HomePage.class);
+            }
+        };
+        form.add(homePageLink3);
         add(form);
     }
 }

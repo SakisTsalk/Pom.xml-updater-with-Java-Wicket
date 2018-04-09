@@ -10,6 +10,7 @@ import org.apache.wicket.behavior.AttributeAppender;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.*;
 import org.apache.wicket.markup.html.link.DownloadLink;
+import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.ListView;
 import org.apache.wicket.model.Model;
@@ -49,13 +50,18 @@ public class ResultsPage extends BasePage implements IAjaxIndicatorAware {
         final File fXmlFile = new File(filename);
         File responsefile = new File(uploadfolder+"response.json");
         final PomxmlManager pomxml = new PomxmlManagerImpl();
-        pomxml.GetPomResults(fXmlFile,dependencylist,responsefile);
+
+            pomxml.GetPomResults(fXmlFile,dependencylist,responsefile);
+
+            if (!responsefile.exists()) {
+                setResponsePage(ErrorPage.class);
+            }
 
         final CheckGroup<Dependencies> group = new CheckGroup<Dependencies>("group",selecteddependencieslist);
 
         form.add(group);
 
-        final DownloadLink downloadlink = new DownloadLink("link1", fXmlFile, fXmlFile.getName());
+        final DownloadLink downloadlink = new DownloadLink("downloadlink", fXmlFile, fXmlFile.getName());
 
 
 
@@ -106,6 +112,13 @@ public class ResultsPage extends BasePage implements IAjaxIndicatorAware {
        // pomxml.UpdatePomFile(fXmlFile, selecteddependencieslist, filename);
 
 
+        Link homePageLink = new Link("homepagelink") {
+            @Override
+            public void onClick() {
+                setResponsePage(HomePage.class);
+            }
+        };
+        form.add(homePageLink);
 
 
          downloadlink.setOutputMarkupId(true);

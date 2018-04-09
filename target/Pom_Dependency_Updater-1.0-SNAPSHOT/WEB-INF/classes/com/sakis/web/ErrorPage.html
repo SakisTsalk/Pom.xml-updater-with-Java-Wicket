@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org" xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+</head>
+<body>
+<wicket:extend>
+    <form wicket:id="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="error-template">
+                        <h1>Oops!</h1>
+                        <div class="error-details">
+                            Sorry, an error has occured, Requested page not found!
+                        </div>
+                        <hr>
+                        <div class="error-actions">
+                            <a wicket:id="homePage" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
+                                Take Me Home </a><a href="http://www.jquery2dotnet.com" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-envelope"></span> Contact Support </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</wicket:extend>
+</body>
+</html>

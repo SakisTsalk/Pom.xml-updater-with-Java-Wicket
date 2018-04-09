@@ -7,84 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5e0a079-f181-4b7f-a963-c65797594f20" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Pom_Dependency_Updater_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Pom_Dependency_Updater_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Pom_Dependency_Updater_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Pom_Dependency_Updater_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_appengine_appengine_api_1_0_sdk_1_9_54.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_appengine_appengine_api_1_0_sdk_1_9_54.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_gentyref_gentyref_1_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_gentyref_gentyref_1_2_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_flute_flute_1_3_0_gg2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_flute_flute_1_3_0_gg2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_vaadin_sass_compiler_0_9_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_vaadin_sass_compiler_0_9_13.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_vaadin_server_8_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_vaadin_server_8_0_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_vaadin_shared_8_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_vaadin_shared_8_0_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_6_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_wicket_wicket_core_7_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_wicket_wicket_core_7_6_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_wicket_wicket_extensions_1_5_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_wicket_wicket_extensions_1_5_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_wicket_wicket_request_7_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_wicket_wicket_request_7_6_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_wicket_wicket_util_7_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_wicket_wicket_util_7_6_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_aggregate_jetty_all_9_2_19_v20160908.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_aggregate_jetty_all_9_2_19_v20160908.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pom_Dependency_Updater.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Pom_Dependency_Updater.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sakis/WicketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sakis/WicketApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sakis/pomManager/PomxmlManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sakis/pomManager/PomxmlManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sakis/pomManager/PomxmlManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sakis/pomManager/PomxmlManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sakis/pomManager/pomdepenencies/Dependencies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sakis/pomManager/pomdepenencies/Dependencies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sakis/pomManager/pomdepenencies/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sakis/pomManager/pomdepenencies/Properties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sakis/web/AboutPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sakis/web/AboutPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sakis/web/AboutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sakis/web/AboutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sakis/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sakis/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sakis/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sakis/TestHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/jetty/jetty-http.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/jetty/jetty-http.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/jetty/jetty-https.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/jetty/jetty-https.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/jetty/jetty-ssl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/jetty/jetty-ssl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/jetty/jetty.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/jetty/jetty.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/WicketApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/WicketApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/AboutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/AboutPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/AboutPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/AboutPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/BasePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/BasePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sakis/WicketApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sakis/WicketApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sakis/web/AboutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sakis/web/AboutPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sakis/web/AboutPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sakis/web/AboutPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sakis/web/BasePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sakis/web/BasePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sakis/web/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sakis/web/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sakis/web/ResultsPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sakis/web/ResultsPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sakis.TestHomePage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sakis.TestHomePage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.sakis.TestHomePage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.sakis.TestHomePage.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/thesis1-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/thesis1-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sakis/web/ResultsPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sakis/web/ResultsPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sakis/web/ResultsPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sakis/web/ResultsPage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sakis/web/ResultsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sakis/web/ResultsPage.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,34 +37,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WicketApplication.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/WicketApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="79" column="92" selection-start-line="79" selection-start-column="92" selection-end-line="79" selection-end-column="92" />
+            <state relative-caret-position="403">
+              <caret line="71" column="46" lean-forward="true" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResultsPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.java">
+      <file leaf-file-name="HomePage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-469">
-              <caret line="42" column="37" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="37" />
+            <state relative-caret-position="306">
+              <caret line="18" column="88" selection-start-line="18" selection-start-column="88" selection-end-line="18" selection-end-column="88" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -134,6 +74,14 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sakis/WicketApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sakis/web/AboutPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sakis/web/AboutPage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.html" />
       </list>
     </option>
   </component>
@@ -167,18 +115,17 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1196" />
     <option name="y" value="-4" />
-    <option name="width" value="1920" />
-    <option name="height" value="1084" />
+    <option name="width" value="1301" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,15 +176,32 @@
             <path>
               <item name="Pom.xml-updater-with-Java-Wicket" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pom.xml-updater-with-Java-Wicket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pom.xml-updater-with-Java-Wicket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pom.xml-updater-with-Java-Wicket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pom.xml-updater-with-Java-Wicket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pom.xml-updater-with-Java-Wicket" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -469,21 +433,23 @@
       <workItem from="1521232121295" duration="649000" />
       <workItem from="1521232901633" duration="85000" />
       <workItem from="1522654132046" duration="3456000" />
-      <workItem from="1522942461680" duration="3281000" />
+      <workItem from="1522942461680" duration="3884000" />
+      <workItem from="1523112686398" duration="167000" />
+      <workItem from="1523268369853" duration="4213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8049000" />
+    <option name="totallyTimeSpent" value="13032000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
+    <frame x="1366" y="-4" width="1920" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021322" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="8" sideWeight="0.4978678" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.20625" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.13958333" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -499,9 +465,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32991803" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32991803" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17604166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16875" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -521,6 +487,52 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/WicketApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="79" column="92" selection-start-line="79" selection-start-column="92" selection-end-line="79" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="37" />
+          <folding>
+            <element signature="e#4134#4135#0" expanded="true" />
+            <element signature="e#4178#4179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/WicketApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="79" column="92" selection-start-line="79" selection-start-column="92" selection-end-line="79" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/WicketApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -654,31 +666,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="60" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/pomManager/pomdepenencies/Properties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/pomManager/PomxmlManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/AboutPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -696,24 +687,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-469">
-          <caret line="42" column="37" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="37" />
+        <state relative-caret-position="119">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.java">
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Thread.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="79" column="92" selection-start-line="79" selection-start-column="92" selection-end-line="79" selection-end-column="92" />
+        <state relative-caret-position="508">
+          <caret line="241" selection-start-line="241" selection-end-line="241" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/pomManager/PomxmlManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="175" column="44" lean-forward="true" selection-start-line="175" selection-start-column="24" selection-end-line="175" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/WicketApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="-51">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="43" selection-start-line="7" selection-start-column="3" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/AboutPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/AboutPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="15" column="80" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="71" column="74" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
+          <folding>
+            <element signature="e#2951#2958#1" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#wicket:extend#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="114" column="50" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="50" />
+          <folding>
+            <element signature="e#4134#4135#0" expanded="true" />
+            <element signature="e#4178#4179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="88" selection-start-line="18" selection-start-column="88" selection-end-line="18" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="71" column="46" lean-forward="true" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
         </state>
       </provider>
     </entry>

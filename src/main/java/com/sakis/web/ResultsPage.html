@@ -50,10 +50,34 @@
 
         <p class="small">*Please note that some of the newest versions may not be valid yet. </p>
 
-        <input   wicket:id="done" type="button" class="btn btn-primary"value="Update File"/> <span id="loadingIndicator_id" style="display:none;"  class="small">
+        <input   wicket:id="done" type="button" class="btn btn-primary"value="Update File" data-toggle="modal" data-target="#myModal"/>
+            <span id="loadingIndicator_id" style="display:none;"  class="small">
 		<img src="images/ajax-loader.gif"/>
 	</span>
-        <button type="button" class="btn btn-primary" wicket:id="link1">Download the updated pom.xml</button>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Pom file updated</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p> Your pom file has be updated to the latest versions. Download the updated pom.xml</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" wicket:id="downloadlink">Download</button>
+                            <button type="button" class="btn"style="float: left" wicket:id="homepagelink">home</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        <!--<button type="button" class="btn btn-primary" wicket:id="link1">Download the updated pom.xml</button>-->
 
         </div>
     </form>
