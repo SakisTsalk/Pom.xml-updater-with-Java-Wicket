@@ -12,13 +12,13 @@ public class BasePage extends WebPage  {
 
     public BasePage() {
 
-        Link homePageLink = new Link("homePage") {
+       /* Link homePageLink = new Link("homePage") {
             @Override
             public void onClick() {
                 setResponsePage(HomePage.class);
             }
         };
-        add(homePageLink);
+        add(homePageLink);*/
 
         Link homePageLink2 = new Link("homePage2") {
             @Override
