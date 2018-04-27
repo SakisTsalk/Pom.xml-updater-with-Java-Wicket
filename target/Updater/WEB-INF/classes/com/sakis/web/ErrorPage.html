@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org" xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+</head>
+<body>
+<wicket:extend>
+    <form wicket:id="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="error-template">
+                        <h2>Error</h2>
+                        <div class="error-details">
+                            Something wrong happened. Verify pom.xml is in correct form
+                        </div>
+                        <hr>
+                        <div class="error-actions">
+                            <a wicket:id="homePage" class="btn btn-danger">
+                                 Return Home </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</wicket:extend>
+</body>
+</html>

@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="Pom_Dependency_Updater:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="Pom_Dependency_Updater-1.0-SNAPSHOT.war">
+    <root id="archive" name="Updater.war">
       <element id="artifact" artifact-name="Pom_Dependency_Updater:war exploded" />
     </root>
   </artifact>

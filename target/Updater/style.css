@@ -1,0 +1,208 @@
+body, p, li, a { font-family: arial, serif;font-size:13pt;}
+h1, h2, h3 { font-family: 'Yanone Kaffeesatz', arial, serif; }
+/*body { margin:0;padding:0; }*/
+html, body {
+	height: 100%;
+
+}
+body{
+
+}
+.wrapper {
+	width: 100%;
+	position: absolute;
+
+}
+
+#hd {
+	width : 100%;
+	height : 87px;
+	background-color : #092E67;
+	margin-top : 0;
+	padding-top : 10px;
+	border-bottom : 1px solid #888;
+	z-index : 0;
+}
+#ft {
+	position : absolute;
+	bottom : 0;
+	width : 100%;
+	height : 99px;
+	background-color : #6493D2;
+	border-top : 1px solid #888;
+	z-index : 0;
+}
+#logo,#bd {
+	width : 650px;
+	margin: 0 auto;
+	padding: 25px 50px 0 50px;
+}
+#logo h1 {
+	color : white;
+	font-size:36pt;
+	display: inline;
+}
+#logo img { 
+	display:inline;
+	vertical-align: bottom;
+	margin-left : 50px;
+	margin-right : 5px;
+}
+body { margin-top : 0; padding-top : 0;}
+#logo, #logo h1 { margin-top : 0; padding-top : 0;}
+#bd {
+	position : absolute;
+	top : 75px;
+	bottom : 75px;
+	left : 50%;
+	margin-left : -325px;
+	z-index : 1;
+	overflow: auto;
+	background-color : #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0px 0px 10px #888;
+	-webkit-box-shadow: 0px 0px 10px #888;
+	box-shadow: 0px 0px 10px #888;
+}
+a, a:visited, a:hover, a:active {
+	color : #6493D2;
+}
+h2 {
+	padding : 0; margin:0;
+	font-size:36pt;
+	color:#FF5500;
+}
+h3 {
+	padding : 0; margin:0;
+	font-size:24pt;
+	color:#092E67;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	height: 40px;
+
+
+}
+
+.navbar-primary{
+	background-color: #fffbfa;
+}
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+	padding-top: 20px;
+	background-color: #f1f1f1;
+	height: 100%;
+
+}
+
+/* Set black background color, white text and some padding */
+footer {
+
+	background-color: white;
+
+	top: 610px;
+	position: relative;
+
+}
+
+@media screen and (min-width: 480px) and (max-width:1400px){
+  footer {
+   top:610px;
+}
+}
+
+@media screen and (max-width: 480px) {
+	footer {
+		top:400px;
+	}
+}
+@media screen and (min-width:1400px) {
+	footer {
+		top:1000px;
+	}
+}
+
+
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+	.sidenav {
+		height: auto;
+		padding: 15px;
+	}
+	.row.content {height:auto;}
+}
+.feedbackPanelINFO {
+	color: red;
+	list-style-type: none;
+}
+.feedbackPanelERROR {
+	color: red;
+	list-style-type: none;
+}
+
+.navbar-custom {
+	color: darkgreen;
+
+}
+
+.navbar-brand {
+	padding: 0px;
+
+}
+.navbar-brand>img {
+	padding: 7px 15px;
+
+}
+
+
+.table-fixed thead {
+	color:white;
+	width: 98.7%;
+	align-items:center;
+	border-right: 1px solid white;
+	min-width: 700px;
+	table-layout: auto;
+	border-collapse: collapse;
+}
+.table-fixed tbody {
+
+
+	height: 281px;
+	overflow-y: scroll;
+	width:100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+	display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+	text-align: center;
+	float: left;
+	border-right: 1px solid #d6d4ff;
+	border-collapse: collapse;
+	border-left: 1px solid #d6d4ff;
+}
+
+
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td:last-child {
+
+	word-break: break-all;
+	border-right: 1px solid #d6d4ff;
+}
+
+.table-fixed tbody, .table-fixed tr:last-child {
+	border-bottom: 1px solid #cccccc;
+}
+
+
+
+

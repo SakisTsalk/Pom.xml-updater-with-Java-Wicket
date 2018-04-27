@@ -7,10 +7,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5e0a079-f181-4b7f-a963-c65797594f20" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Pom_Dependency_Updater_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Pom_Dependency_Updater_war.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/Pom_Dependency_Updater_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Pom_Dependency_Updater_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/WicketApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/pomManager/PomxmlManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/pomManager/PomxmlManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/pomManager/pomdepenencies/Dependencies.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/pomManager/pomdepenencies/Properties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/AboutPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/AboutPage$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/AboutPage$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/AboutPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/AboutPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/BasePage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/BasePage$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/BasePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/BasePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ErrorPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ErrorPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ErrorPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/HomePage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/HomePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/appengine-api-1.0-sdk-1.9.54.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/commons-collections4-4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/flute-1.3.0.gg2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/gentyref-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/json-simple-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/jsoup-1.8.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.6.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/log4j-core-2.6.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/log4j-slf4j-impl-2.6.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/sac-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.21.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/vaadin-sass-compiler-0.9.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/vaadin-server-8.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/vaadin-shared-8.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/wicket-core-7.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/wicket-extensions-1.5.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/wicket-request-7.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/wicket-util-7.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/images/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/images/giphy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/images/icon2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/images/linkedin-icon-22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/images/logo2.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Updater.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Updater.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sakis.TestHomePage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sakis.TestHomePage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.sakis.TestHomePage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.sakis.TestHomePage.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,15 +81,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="71" column="46" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HomePage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,11 +129,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ErrorPage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ErrorPage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="164">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="121" column="38" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -143,6 +202,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.html" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -502,12 +562,12 @@
       <workItem from="1523293431476" duration="1391000" />
       <workItem from="1524497421307" duration="3252000" />
       <workItem from="1524828494735" duration="62000" />
-      <workItem from="1524840907966" duration="519000" />
+      <workItem from="1524840907966" duration="1240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18902000" />
+    <option name="totallyTimeSpent" value="19623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -515,7 +575,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021322" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="8" sideWeight="0.4978678" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.24827056" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.115295924" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -531,7 +591,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4804217" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39156628" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30053803" />
       <window_info id="Web" order="2" side_tool="true" />
@@ -553,13 +613,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1938">
@@ -911,8 +964,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        <state relative-caret-position="164">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="121" column="38" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -975,6 +1035,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

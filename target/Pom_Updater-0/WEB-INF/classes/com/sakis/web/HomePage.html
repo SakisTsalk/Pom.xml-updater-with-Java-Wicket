@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org" xmlns="http://www.w3.org/1999/html">
+<head>
+
+</head>
+
+<body>
+<wicket:extend>
+
+ <div wicket:id="feedback"></div>
+<form wicket:id="form">
+
+
+	<p>
+		<label>Select file :</label>
+		<span class="btn btn-default btn-file">
+		<input wicket:id="fileUpload" size="40" type="file" accept=".xml"/>
+		</span>
+		<input   wicket:id="submit" type="button" class="btn btn-primary" value="Upload"/>
+
+	<span id="loadingIndicator_id" style="display:none;"  class="small">
+		<img src="images/ajax-loader.gif"/> Please wait...
+	</span>
+
+	</p>
+
+
+
+	<p>
+		Upload the pom.xml file of your project and see which of your dependencies and Plugins are outdated.
+	</p>
+
+
+
+</form>
+
+</wicket:extend>
+
+</body>
+</html>

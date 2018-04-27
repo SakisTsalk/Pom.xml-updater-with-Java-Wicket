@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org" xmlns:border="http://www.w3.org/1999/xhtml">
+
+<head>
+
+</head>
+
+<body>
+<wicket:extend>
+    <form wicket:id="form">
+        <div class="container">
+
+        <h4>Check which dependencies and plugins you want to update</h4>
+
+
+    <span wicket:id="group">
+
+
+
+
+          <table  class="table table-fixed" >
+            <thead>
+            <tr >
+                <th  style="width:25%;height:48px; border-top: 1px solid #d6d4ff; background-color: #006699;">Group ID</th>
+                <th  style="width:16.6%; height:48px; border-top: 1px solid #d6d4ff; background-color: #006699;">Artifact ID</th>
+                <th  style="width:16.6%; height:48px; border-top: 1px solid #d6d4ff; background-color: #006699;">Version</th>
+                <th  style="width:16.6%; height:48px; border-top: 1px solid #d6d4ff; background-color: #006699;">Newest Version</th>
+                <th  style="width:8.3%; height:48px; border-top: 1px solid #d6d4ff; background-color: #006699;">Updated</th>
+                <th  style="width:16.6%; background-color: #006699; height:48px; text-align: left; border-top: 1px solid white; border-right: 1px solid white;" ><input id="groupcelector" type="checkbox"  style="transform: scale(1.5);  "  wicket:id="groupselector"><label style="margin-left: 5px; position: absolute">   Check/Uncheck All</label> </th>
+            </tr>
+            </thead>
+
+            <tbody  >
+            <tr wicket:id="listView">
+
+                <td  style="width:25%; height:48px;"><span wicket:id="groupid"></span></td>
+                <td  style="width:16.6%; height:48px;"><span wicket:id="artifactid"></span></td>
+                <td style="width:16.6%; height:48px;"><span wicket:id="version"></span></td>
+                <td style="width:16.6%; height:48px;"><span wicket:id="newversion"></span></td>
+                <td style= "width:8.3%; height:48px;"><span wicket:id="newversiondate"></span></td>
+                <td style="height:48px; width:16.6%;   text-align: left" ><input id="check" type="checkbox" style="transform: scale(1.5); margin-top: 10px;"  wicket:id="check"> </td>
+            </tr>
+            </tbody>
+        </table>
+
+
+     </span>
+
+
+
+        <p class="small">*Please note that some of the newest versions may not be valid yet. </p>
+
+        <input   wicket:id="done" type="button" class="btn btn-primary"value="Update File" data-toggle="modal" data-target="#myModal"/>
+            <span id="loadingIndicator_id" style="display:none;"  class="small">
+		<img src="images/ajax-loader.gif"/>
+	</span>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Pom file updated</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p> Your pom file has been updated. Download the updated pom.xml</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" wicket:id="downloadlink">Download</button>
+                            <button type="button" class="btn" wicket:id="homepagelink">home</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        <!--<button type="button" class="btn btn-primary" wicket:id="link1">Download the updated pom.xml</button>-->
+
+        </div>
+    </form>
+</wicket:extend>
+</body>
+</html>
