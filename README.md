@@ -4,4 +4,4 @@ A Web app intended  to help developers using Maven as a build Manager. Provides 
 
 Check the app on Openshift. 
 
-URL: http://pom-maven-dependency.193b.starter-ca-central-1.openshiftapps.com/Pom_Dependency_Updater-1.0-SNAPSHOT
+URL: http://pom-maven-dependency.193b.starter-ca-central-1.openshiftapps.com/Updater
