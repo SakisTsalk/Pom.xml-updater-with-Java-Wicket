@@ -6,70 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5e0a079-f181-4b7f-a963-c65797594f20" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Pom_Dependency_Updater_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Pom_Dependency_Updater_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Pom_Dependency_Updater_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Pom_Dependency_Updater_war_exploded.xml" afterDir="false" />
+    <list default="true" id="b5e0a079-f181-4b7f-a963-c65797594f20" name="Default" comment="adding circleci config">
+      <change afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/WicketApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/pomManager/PomxmlManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/pomManager/PomxmlManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/pomManager/pomdepenencies/Dependencies.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/pomManager/pomdepenencies/Properties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/AboutPage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/AboutPage$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/AboutPage$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/AboutPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/AboutPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/BasePage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/BasePage$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/BasePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/BasePage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ErrorPage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ErrorPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ErrorPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/HomePage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/HomePage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/com/sakis/web/ResultsPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/classes/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/appengine-api-1.0-sdk-1.9.54.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/commons-collections4-4.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/flute-1.3.0.gg2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/gentyref-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/json-simple-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/jsoup-1.8.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/log4j-core-2.6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/log4j-slf4j-impl-2.6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/sac-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.21.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/vaadin-sass-compiler-0.9.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/vaadin-server-8.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/vaadin-shared-8.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/wicket-core-7.6.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/wicket-extensions-1.5.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/wicket-request-7.6.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/lib/wicket-util-7.6.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/images/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/images/giphy.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/images/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/images/icon2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/images/linkedin-icon-22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/images/logo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pom_Dependency_Updater-1.0-SNAPSHOT/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Updater.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Updater.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sakis.TestHomePage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sakis.TestHomePage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.sakis.TestHomePage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.sakis.TestHomePage.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,19 +20,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomePage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BasePage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="105">
               <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
             </state>
           </provider>
@@ -102,7 +32,7 @@
       <file leaf-file-name="ResultsPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
+            <state relative-caret-position="1440">
               <caret line="114" column="50" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="50" />
             </state>
           </provider>
@@ -111,7 +41,7 @@
       <file leaf-file-name="ResultsPage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
+            <state relative-caret-position="1050">
               <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
             </state>
           </provider>
@@ -120,7 +50,7 @@
       <file leaf-file-name="ErrorPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="210">
               <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -132,17 +62,17 @@
       <file leaf-file-name="ErrorPage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
+            <state relative-caret-position="240">
               <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="121" column="38" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
+            <state relative-caret-position="2760">
+              <caret line="184" column="35" selection-start-line="184" selection-start-column="35" selection-end-line="184" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -150,7 +80,7 @@
       <file leaf-file-name="AboutPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/AboutPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="105">
               <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
             </state>
           </provider>
@@ -159,7 +89,7 @@
       <file leaf-file-name="AboutPage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/AboutPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="225">
               <caret line="15" column="80" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="80" />
             </state>
           </provider>
@@ -168,8 +98,17 @@
       <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="285">
               <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
@@ -203,6 +142,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.circleci/config.yml" />
       </list>
     </option>
   </component>
@@ -235,6 +175,9 @@
       <select />
     </treeState>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="64" />
     <option name="y" value="-11" />
@@ -247,8 +190,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -329,6 +272,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -527,19 +471,6 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -563,40 +494,45 @@
       <workItem from="1524497421307" duration="3252000" />
       <workItem from="1524828494735" duration="62000" />
       <workItem from="1524840907966" duration="1240000" />
+      <workItem from="1525940376983" duration="475000" />
+      <workItem from="1525965890407" duration="600000" />
+      <workItem from="1525968653209" duration="87000" />
+      <workItem from="1526289573323" duration="193000" />
+      <workItem from="1526314624943" duration="209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19623000" />
+    <option name="totallyTimeSpent" value="20978000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021322" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="8" sideWeight="0.4978678" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.115295924" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.48720682" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021322" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="8" sideWeight="0.4978678" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.11470362" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.39156628" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30053803" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30023095" />
       <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.48720682" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -612,21 +548,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding circleci config" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding circleci config" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="114" column="50" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -875,13 +801,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Thread.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="241" selection-start-line="241" selection-end-line="241" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Thread.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/pomManager/PomxmlManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -905,56 +825,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/HomePage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
+        <state relative-caret-position="1440">
           <caret line="114" column="50" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/AboutPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="105">
           <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/AboutPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="225">
           <caret line="15" column="80" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="105">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ResultsPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
+        <state relative-caret-position="1050">
           <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="210">
           <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -964,15 +877,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/ErrorPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
+        <state relative-caret-position="240">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="121" column="38" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
+        <state relative-caret-position="2760">
+          <caret line="184" column="35" selection-start-line="184" selection-start-column="35" selection-end-line="184" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sakis/web/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
@@ -1036,6 +966,18 @@
               <list>
                 <option value="0.2" />
                 <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
